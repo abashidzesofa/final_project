@@ -8,3 +8,9 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+

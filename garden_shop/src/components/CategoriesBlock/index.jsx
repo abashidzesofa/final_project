@@ -10,8 +10,10 @@ export default function CategoriesBlock() {
       <section className={s.categories_block}>
          <div className={s.head}>
             <h2>Categories</h2>
-            <hr />
-            <div>All categories</div>
+            <div className={s.button}>
+               <hr />
+               <div>All categories</div>
+            </div>
          </div>
          <ul>
             <li>
