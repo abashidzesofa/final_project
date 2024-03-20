@@ -14,3 +14,7 @@ a {
   src: url('./fonts/Montserrat-VariableFont_wght.ttf');
 }
 
+.wrapper {
+  width: 1360px;
+  margin: 40px auto;
+}

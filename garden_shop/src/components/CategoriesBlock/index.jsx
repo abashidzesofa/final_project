@@ -1,38 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import s from './index.module.css'
-import img_first from '../../images/fertilizer.png'
-import img_second from '../../images/material.png'
-import img_third from '../../images/septic_tanks.png'
-import img_fourth from '../../images/tools.png'
+import { useDispatch, useSelector } from 'react-redux';
+import CategoryCard from '../CategoryCard';
+import { get_categories } from '../../requests/categories';
+
 
 export default function CategoriesBlock() {
+
+   const dispatch = useDispatch();
+
+   
+const categories_data = useSelector(store => store.categories);
+console.log(categories_data);
+
+useEffect(() => {
+   dispatch(get_categories)
+}, []);
+
    return (
-      <section className={s.categories_block}>
+      <section  className={[s.categories_block, 'wrapper'].join(' ')}>
          <div className={s.head}>
             <h2>Categories</h2>
-            <div className={s.button}>
-               <hr />
-               <div>All categories</div>
-            </div>
+            <div> All categories</div>
          </div>
-         <ul>
-            <li>
-               <img src={img_first} alt="fertilizer" />
-               <p>Fertilizer</p>
-            </li>
-            <li>
-               <img src={img_second} alt="Protective products and septic tanks" />
-               <p>Protective products and septic tanks</p>
-            </li>
-            <li>
-               <img src={img_third} alt="Planting material	" />
-               <p>Planting material	</p>
-            </li>
-            <li>
-               <img src={img_fourth} alt="Tools and equipment" />
-               <p>Tools and equipment</p>
-            </li>
-         </ul>
+         <div className={s.categories_container}>
+            {
+                  
+               categories_data.map(el => <CategoryCard key={el} {...el}/>)
+                  
+            }
+         </div>
+      
       </section>
    )
 }

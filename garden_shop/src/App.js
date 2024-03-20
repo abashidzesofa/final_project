@@ -6,6 +6,7 @@ import AllProductsPage from './pages/AllProductsPage';
 import SalesPage from './pages/SalesPage';
 
 function App() {
+
   return (
     <div>
       <Routes>

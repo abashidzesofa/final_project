@@ -1,0 +1,12 @@
+.discount_block {
+   display: flex;
+   flex-direction: column;
+}
+.discount_block h2 {
+   font-family: 'Montserrat';
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 70px;
+   text-align: center;
+   color: #FFFFFF;
+}
