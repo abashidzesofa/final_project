@@ -4,10 +4,15 @@ import MainPage from './pages/MainPage';
 import CategoriesPage from './pages/CategoriesPage';
 import AllProductsPage from './pages/AllProductsPage';
 import SalesPage from './pages/SalesPage';
+import Banner from './components/Banner';
+
 
 function App() {
   return (
     <div>
+      
+      <Banner/>
+
       <Routes>
         <Route path='/' element={ <MainPage/> } />
         <Route path='/categories' element={ <CategoriesPage/> } />
