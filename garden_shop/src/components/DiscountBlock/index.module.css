@@ -1,12 +1,78 @@
 .discount_block {
    display: flex;
    flex-direction: column;
+   position: relative;
+   background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+   height: 486px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   background-color: #f9f9f9;
+   
 }
-.discount_block h2 {
+
+.back_image {
+   object-fit: cover;
+   width: 748px;
+   height: 360px;
+   position: absolute;
+   bottom: 0px;
+   left: 32px;
+}
+
+.discount_block > h3 {
    font-family: 'Montserrat';
    font-size: 64px;
    font-weight: 700;
    line-height: 70px;
    text-align: center;
    color: #FFFFFF;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   width: 516px;
+   height: 206px;
+   position: absolute;
+   bottom: 25%;
+   right: 40px;
+}
+
+form > input:focus {
+   outline: none;
+   border-color: white;
+   background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+}
+
+form > input::placeholder {
+   color: white;
+   opacity: 1;
+}
+
+form > input { 
+   color: white; 
+   border: 1px solid white;
+   border-radius: 7px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 26px;
+   padding: 16px 32px;
+   background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+
+}
+
+form > button {
+   padding: 16px 32px;
+   border-radius: 7px;
+   background-color: rgba(255, 255, 241, 1);
+   color: rgba(66, 68, 54, 1);
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   text-align: center;
+   margin-top: 10px;
+   border: none;
 }
