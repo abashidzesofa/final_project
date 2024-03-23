@@ -75,4 +75,5 @@ form > button {
    text-align: center;
    margin-top: 10px;
    border: none;
+   cursor: pointer;
 }

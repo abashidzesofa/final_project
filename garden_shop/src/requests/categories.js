@@ -1,4 +1,4 @@
-import { load_categories_action } from '../store/categories_reducer'
+import { load_categories_action } from '../store/reducers/categories_reducer'
 
 
 export const domen = 'http://localhost:3333';

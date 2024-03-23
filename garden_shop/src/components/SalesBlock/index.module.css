@@ -1,25 +1,25 @@
-.categories_block {
+.sales_block {
    display: flex;
    flex-direction: column;
 }
 
-.head {
+.sales_head {
    display: flex;
    justify-content: space-between;
    position: relative;
 }
 
-h2 {
+h4 {
    font-family: 'Montserrat';
    font-size: 64px;
    font-weight: 700;
    line-height: 70px;
-   width: 361px;
+   width: 140px;
    height: 70px;
-   color: rgba(66, 68, 54, 1);
+   color: #424436;
 }
 
-.head > div:last-child {
+.sales_head > div:last-child {
    display: flex;
    justify-content: center;
    align-items: center; 
@@ -29,24 +29,26 @@ h2 {
    font-weight: 500;
    line-height: 20px;
    color: #8B8B8B;
-   width: 142px;
+   width: 97px;
    height: 36px;
    border: 1px solid #DDDDDD;
    border-radius: 7px;
-} 
+}
 
-.line {
+.sales_line {
    border-bottom: 1px solid #DDDDDD;
-   width: 825px;
+   width: 1091px;
    height: 1px;
    position: absolute;
-   right: 142px;
+   right: 96px;
    top: 35px;
-
 }
 
 
-.categories_container {
+
+
+
+.sales_container {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 32px;

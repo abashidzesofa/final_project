@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import CategoryCard from '../CategoryCard';
 import { get_categories } from '../../requests/categories';
 
-// осталось стилизовать линию и блок завершен
-
 export default function CategoriesBlock() {
 
    const dispatch = useDispatch();
