@@ -6,6 +6,8 @@ import AllProductsPage from './pages/AllProductsPage';
 import SalesPage from './pages/SalesPage';
 import CartPage from './pages/CartPage';
 
+
+
 function App() {
 
   return (
