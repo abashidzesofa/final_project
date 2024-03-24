@@ -19,7 +19,7 @@ h2 {
    color: rgba(66, 68, 54, 1);
 }
 
-.head > div:last-child {
+.all_categories_div {
    display: flex;
    justify-content: center;
    align-items: center; 
@@ -33,6 +33,8 @@ h2 {
    height: 36px;
    border: 1px solid #DDDDDD;
    border-radius: 7px;
+   cursor: pointer;
+   margin: 16px 0;
 } 
 
 .line {

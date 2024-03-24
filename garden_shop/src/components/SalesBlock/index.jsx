@@ -3,6 +3,7 @@ import s from './index.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { get_products } from '../../requests/products';
 import SalesCard from '../SalesCard';
+import { Link } from 'react-router-dom';
 
 export default function SalesBlock() {
 
@@ -20,7 +21,11 @@ useEffect(() => {
          <div className={s.sales_head}>
             <h4>Sale</h4>
             <div className={s.sales_line}></div>
-            <div> All sales </div>
+            <Link to='/sales'>
+               <div>
+                  <div className={s.all_sales_div}> All sales </div>
+               </div>
+            </Link>
          </div>
             <div className={s.sales_container}>
                {
