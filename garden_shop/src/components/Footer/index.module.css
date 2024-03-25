@@ -100,5 +100,14 @@
         gap: 40px;
         height: 949px;
         width: 1440px;
+        display: flex;
+        flex-direction: column;
     }
     
+
+    .map {
+        width: 1360px;
+        height: 350px;
+        border-radius: 10px;
+        margin-left: 40px;
+    }

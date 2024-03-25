@@ -31,6 +31,9 @@ export default function Footer() {
 
       </div>
     </div>
+    <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.409556617839!2d13.372520477246768!3d52.50792683712267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851cbdeaf3909%3A0xff2aef2e44148447!2sLinkstra%C3%9Fe%202%2C%2010785%20Berlin!5e0!3m2!1sru!2sde!4v1711364878115!5m2!1sru!2sde"  className={s.map}></iframe>
+    </div>
     
     </section>
   )
