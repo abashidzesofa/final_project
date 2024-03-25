@@ -1,0 +1,19 @@
+.category_card {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.categories_img {
+   width: 316px;
+   height: 350px;
+   border-radius: 5%;
+   object-fit: cover;
+}
+.title {
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 26px;
+   text-align: center;
+   color: #424436;
+}

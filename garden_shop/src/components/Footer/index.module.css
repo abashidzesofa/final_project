@@ -1,0 +1,113 @@
+.h2 {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 1360px;
+    height: 70px;
+    color:rgba(66, 68, 54, 1);
+    gap: 32px;
+    margin: 40px;
+    
+    
+    }
+    
+    .link_card_phone {
+        width: 780px;
+        height: 150px;
+        padding: 32px;
+        
+        background-color: rgba(242, 246, 211, 1);
+        border-radius: 12px;
+        margin-left: 40px;
+        
+    }
+    
+    .link_card_adress {
+        width: 780px;
+        height: 194px;
+        padding: 32px;
+        
+        background-color: rgba(242, 246, 211, 1);
+        border-radius: 12px;
+        margin-left: 40px;
+    }
+    .small {
+        width: 200px;
+        height: 26px;
+        font-family: Montserrat;
+        
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(139, 139, 139, 1);
+        margin-bottom: 16px
+    
+    }
+    .p {
+        width: 716px;
+        height: 44px;
+        font-family: Montserrat;
+        
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:  rgba(66, 68, 54, 1);
+        
+    }
+    
+    .right_card_socials {
+       width: 548px;
+       height: 150px;
+        padding: 32px;
+       
+        background-color: rgba(242, 246, 211, 1);
+        border-radius: 12px;
+        margin-right: 40px;
+       
+    
+    }
+    
+    .right_card_hours {
+        width: 548px;
+        height: 194px;
+         padding: 32px;
+        
+         background-color: rgba(242, 246, 211, 1);
+         border-radius: 12px;
+         margin-right: 40px;
+        
+     
+     }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        width: 1360px;
+        height: 376px;
+        
+    }
+    
+    .section {
+        padding: 0px, 40px, 80px, 40px;
+        gap: 40px;
+        height: 949px;
+        width: 1440px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .map {
+        width: 1360px;
+        height: 350px;
+        border-radius: 10px;
+        margin-left: 40px;
+    }

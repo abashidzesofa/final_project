@@ -1,0 +1,57 @@
+.sales_block {
+   display: flex;
+   flex-direction: column;
+}
+
+.sales_head {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+h4 {
+   font-family: 'Montserrat';
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 70px;
+   width: 140px;
+   height: 70px;
+   color: #424436;
+}
+
+.all_sales_div {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20px;
+   color: #8B8B8B;
+   width: 97px;
+   height: 36px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   margin: 16px 0;
+   cursor: pointer;
+}
+
+.sales_line {
+   border-bottom: 1px solid #DDDDDD;
+   width: 1091px;
+   height: 1px;
+   position: absolute;
+   right: 96px;
+   top: 35px;
+}
+
+
+
+
+
+.sales_container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 32px;
+   margin: 40px 0;
+}
