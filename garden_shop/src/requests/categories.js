@@ -9,3 +9,5 @@ export const get_categories = dispatch => {
       .then (res => res.json())
       .then (json => dispatch(load_categories_action(json)))
 }
+
+
