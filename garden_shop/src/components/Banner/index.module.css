@@ -13,15 +13,13 @@
  
 }
 
-   h1 {
+h1 {
    font-family: "Montserrat";
    font-size: 86px;
    width: 1000px;
    height: 250px;
    line-height: 110%;
-   
- 
-}
+   }
 
 button {
    color: white;
@@ -36,6 +34,6 @@ button {
 }  
 
 .title {
-   padding: 80px 80px 210px 40px;
+   padding: 80px 40px 210px 40px;
 
 }
