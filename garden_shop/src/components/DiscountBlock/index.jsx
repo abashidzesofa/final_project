@@ -36,7 +36,7 @@ export default function DiscountBlock() {
          <input type='text' placeholder='Name' name='name'/>
          <input type='tel' placeholder='Phone number' name='phone_number'/>
          <input type='email' placeholder='Email' name='mail'/>
-         <button>Get a discount</button>
+         <button className={s.button}>Get a discount</button>
       </form>
    </section>
    )

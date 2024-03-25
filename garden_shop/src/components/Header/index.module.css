@@ -1,9 +1,10 @@
 .header {
    display: flex;
    justify-content: space-between;
-   border: 0px 0px 1px 0px;
-   border-color: #DDDDDD;
+   border-bottom: 1px solid #DDDDDD;
    position: relative;
+   margin: 0 auto;
+   padding: 16px 0;
 }
 
 .logo_container {
@@ -48,14 +49,13 @@
 .nav_menu {
    display: flex;
    justify-content: center;
-   width: 518px;
    height: 26px;
-   gap: 12px;
+   gap: 32px;
    margin: 24px auto;
 }
 
 
-a {
+.nav_menu > a {
    font-family: 'Montserrat';
    font-size: 20px;
    font-weight: 500;

@@ -1,4 +1,4 @@
-h2 {
+.h2 {
     font-family: Montserrat;
     font-size: 64px;
     font-weight: 700;
@@ -48,7 +48,7 @@ h2 {
         margin-bottom: 16px
     
     }
-    p {
+    .p {
         width: 716px;
         height: 44px;
         font-family: Montserrat;

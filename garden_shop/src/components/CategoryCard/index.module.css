@@ -9,7 +9,7 @@
    border-radius: 5%;
    object-fit: cover;
 }
-.category_card > p {
+.title {
    font-family: 'Montserrat';
    font-size: 20px;
    font-weight: 500;

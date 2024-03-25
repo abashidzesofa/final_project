@@ -20,7 +20,7 @@ useEffect(() => {
    return (
       <section  className={[s.categories_block, 'wrapper'].join(' ')}>
          <div className={s.head}>
-            <h2>Categories</h2>
+            <h2 className={s.h2}>Categories</h2>
             <div className={s.line}></div>
             <Link to='/categories'>
                <div className={s.all_categories_div}> All categories</div>
