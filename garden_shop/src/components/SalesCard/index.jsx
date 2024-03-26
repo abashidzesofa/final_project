@@ -11,8 +11,10 @@ export default function SalesCard({ image, title, discont_price, price }) {
    return (
       <div className={s.sale_card}> 
          <div className={s.img_block}>
+         <button className={s.button_on_hover}>Add to cart</button>
             <img src={ img } alt={ title } className={s.sales_img}/>
             <div> { discount_percentage}% </div> 
+            
          </div>
          <div className={s.description_block}>
             <p> { title } </p>

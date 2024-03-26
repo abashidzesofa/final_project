@@ -23,7 +23,10 @@ export default function CategoriesPage() {
 
    return (
       <div className={[s.categories_page, 'wrapper'].join(' ')}>
-         <Header/>
+         <header>
+            <Header/>
+         </header>
+         
          <section className={s.buttons}>
             <Link to='/'>
                <div className={s.main_page_button}>Main page</div>
@@ -41,9 +44,9 @@ export default function CategoriesPage() {
                   categories_data.map(el => <CategoriesPageCard key={el.id} {...el}/>)
                }
             </div>
-            <div className={s.footer}>
+            <footer>
                <Footer/>
-            </div>
+            </footer>
             
          </section>
       </div>
