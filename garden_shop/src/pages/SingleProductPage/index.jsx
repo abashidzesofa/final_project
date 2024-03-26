@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import { get_single_product } from '../../requests/products';
 import { domen } from '../../requests/categories';
+import SingleProduct from '../../components/SingleProduct';
 
 export default function SingleProductPage() {
 
@@ -16,13 +17,13 @@ export default function SingleProductPage() {
 
    const single_product = useSelector(store => store.single_product);
 
-   console.log(single_product);;
-   const { image, title, description, price, categoryID, discont_price } = single_product;
+   console.log(single_product);
 
-   const img = domen + image;
    return (
       <div>
-         <img src={ img } alt={single_product.title} />
+         {
+            single_product.map(el => <SingleProduct key={el.id} {...el}/>)
+         }
       </div>
    )
 }

@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { get_products } from '../../requests/products';
 import SalesCard from '../../components/SalesCard';
 import s from './index.module.css'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import { Link } from 'react-router-dom'
 
 export default function SalesPage() {
@@ -23,9 +21,6 @@ export default function SalesPage() {
 
    return (
       <div className={[s.sales_page_container, 'wrapper'].join(' ')}>
-         <header> 
-            <Header/> 
-         </header>
          <section className={s.buttons}>
             <Link to='/'>
                   <div className={s.main_page_button}>Main page</div>
@@ -44,9 +39,6 @@ export default function SalesPage() {
                .map(el => <SalesCard key={el.id} {...el}/>)
             }
          </section>
-         <footer> 
-            <Footer/> 
-         </footer>
       </div>
    )
 }

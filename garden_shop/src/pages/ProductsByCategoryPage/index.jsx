@@ -28,9 +28,7 @@ export default function ProductsByCategoryPage() {
    return (
 
       <div className={['wrapper'].join(' ')}>
-         <header>
-            <Header/>
-         </header>
+
          <section className={s.buttons}>
             <Link to='/'>
                   <div className={s.main_page_button}>Main page</div>
@@ -58,10 +56,7 @@ export default function ProductsByCategoryPage() {
             data&&data.map(el => <ProductCard key={el.id} {...el} />)
          }
          </section>
-         <footer>
-            <Footer/>
-         </footer>
-         
+
       </div>
    )
 }

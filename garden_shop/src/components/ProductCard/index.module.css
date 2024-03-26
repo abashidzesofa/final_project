@@ -5,6 +5,7 @@
    border-top-left-radius: 7px;
    border-top-right-radius: 7px;
    object-fit: cover;
+   border-bottom: 1px solid #DDDDDD;
 }
 
 .imgs_block {
@@ -55,6 +56,10 @@
    display: none;
 }
 
+.without_discount {
+   display: none;
+}
+
 .product_by_category {
    width: 316px;
    height: 422px;
@@ -69,12 +74,11 @@
    padding: 20px 32px 32px 32px;
    display: flex;
    flex-direction: column;
-   border-top: 1px solid  #DDDDDD;
 }
 .descr_block > p {
    width: 252px;
    height: 26px;
-   font-family: Montserrat;
+   font-family: 'Montserrat';
    font-size: 20px;
    font-weight: 500;
    line-height: 26px;
@@ -82,6 +86,7 @@
    overflow: hidden;
    text-overflow: ellipsis;
    white-space: nowrap;
+   color: #424436;
 }
 
 .price_block {
