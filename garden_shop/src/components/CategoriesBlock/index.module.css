@@ -1,56 +1,88 @@
 .categories_block {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .head {
-   display: flex;
-   justify-content: space-between;
-   position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .h2 {
-   font-family: 'Montserrat';
-   font-size: 64px;
-   font-weight: 700;
-   line-height: 70px;
-   width: 361px;
-   height: 70px;
-   color: rgba(66, 68, 54, 1);
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70px;
+  width: 361px;
+  height: 70px;
+  color: rgba(66, 68, 54, 1);
 }
 
 .all_categories_div {
-   display: flex;
-   justify-content: center;
-   align-items: center; 
-   align-self: center;
-   font-family: 'Montserrat';
-   font-size: 16px;
-   font-weight: 500;
-   line-height: 20px;
-   color: #8B8B8B;
-   width: 142px;
-   height: 36px;
-   border: 1px solid #DDDDDD;
-   border-radius: 7px;
-   cursor: pointer;
-   margin: 16px 0;
-} 
-
-.line {
-   border-bottom: 1px solid #DDDDDD;
-   width: 825px;
-   height: 1px;
-   position: absolute;
-   right: 142px;
-   top: 35px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #8b8b8b;
+  width: 142px;
+  height: 36px;
+  border: 1px solid #dddddd;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 16px 0;
 }
 
+.line {
+  border-bottom: 1px solid #dddddd;
+  width: 425px;
+  height: 1px;
+  position: absolute;
+  right: 142px;
+  top: 35px;
+}
 
 .categories_container {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 32px;
-   margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin: 20px 0;
+}
+
+@media (max-width: 1000px) {
+  .categories_block {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+  }
+
+  .categories_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+  }
+
+  .h2 {
+    font-family: "Montserrat";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    width: 361px;
+    height: 70px;
+    color: rgba(66, 68, 54, 1);
+    gap: 0 20px;
+  }
+
+  .categories_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin: 20px 0;
+  }
+
 }

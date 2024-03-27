@@ -7,7 +7,8 @@ import cart_icon from './images/icon.png'
 
 export default function Header() {
    return (
-      <section className={[s.header, 'wrapper'].join(' ')}>
+      // <section className={[s.header, 'wrapper'].join(' ')}>
+      <section className={s.header}>
          <div className={s.logo_container}>
             <img src={ logo_plant } alt="logo" className={s.plant_img}/>
             <img src={ logo_ground } alt="logo" className={s.ground_img}/>

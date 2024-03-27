@@ -2,26 +2,28 @@
 
 .banner {
    color: white;
-   background-position: center;
    flex-direction: column;
    justify-content: center;
    display: flex;
    height: 600px;
    max-width: 1440px; 
    margin: 0 auto;
-   background-size: cover;
- 
+   background-position: center;   /*для центрования картинки*/
+   background-size: cover;        /**/   
+   padding: 80px 40px 210px 40px;
 }
 
-h1 {
+.banner h1 {
    font-family: "Montserrat";
    font-size: 86px;
    width: 1000px;
    height: 250px;
-   line-height: 110%;
+   line-height: 120%;
+   /* font-weight: 900; */
+   
    }
 
-button {
+.banner button {
    color: white;
    font-size: 20px;
    background-color: #92A134;
@@ -33,7 +35,27 @@ button {
     
 }  
 
-.title {
-   padding: 80px 40px 210px 40px;
-
-}
+@media(max-width: 1000px) {
+   .banner {
+     display: block;
+     height: 476px;
+     background-position: center;
+     background-size: cover; 
+     flex-direction: column;
+     justify-content: center;
+     display: flex;
+     padding: 60px 20px 120px 20px;
+   }
+ 
+   .banner h1 {
+    
+     font-size: 86px;
+     width: 940px;
+     height: 296px;
+     line-height: 120%;
+   }
+ 
+   .header div {
+     display: none;
+   }
+ }
