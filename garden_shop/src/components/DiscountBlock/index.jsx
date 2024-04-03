@@ -5,7 +5,7 @@ import background_image from './background_image.png'
 
 export default function DiscountBlock() {
 
-   const add_discount_user = (event) => {
+   const add_discount_user = event => {
       event.preventDefault();
       const { name, phone_number, mail } = event.target;
       const discount_user = {
@@ -30,13 +30,13 @@ export default function DiscountBlock() {
 
    return (
       <section className={['wrapper', s.discount_block].join(' ')} >
-      <h3>5 % off on the first order</h3>
-      <img src={background_image} alt="background image"  className={s.back_image}/>
+      <h3> 5 % off on the first order </h3>
+      <img src={ background_image }  alt="background image"/>
       <form onSubmit={add_discount_user}>
          <input type='text' placeholder='Name' name='name'/>
          <input type='tel' placeholder='Phone number' name='phone_number'/>
          <input type='email' placeholder='Email' name='mail'/>
-         <button className={s.button}>Get a discount</button>
+         <button> Get a discount </button>
       </form>
    </section>
    )
