@@ -6,7 +6,7 @@ import s from './index.module.css'
 import { domen } from '../../requests/categories';
 import { decr_count_action, incr_count_action } from '../../store/reducers/single_product_reducer';
 
-export default function SingleProduct({ id, categoryId, title, image, price, discont_price, count }) {
+export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description, count }) {
 
    const dispatch = useDispatch();
 
@@ -63,7 +63,12 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                   <div className={s.add_to_cart}>
                      <button> Add to cart </button>
                   </div>
-         </div>
+            </div>
+            <div className={s.description_block}>
+               <p> Description </p>
+               <p> { description } </p>
+               <p> Read more </p>
+            </div>
             </div>
          </section>
       </div>

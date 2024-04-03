@@ -9,15 +9,7 @@ export const load_single_product_action = product => ({ type: LOAD_SINGLE_PRODUC
 export const incr_count_action = id => ({type: INCR_ITEM, payload: id});
 export const decr_count_action = id => ({type: DECR_ITEM, payload: id});
 
-const check_product = (state, payload) => {
-   const product_in_state = state.find(el => el.id === payload.id);
-   if(product_in_state) {
-      product_in_state.count ++
-      return [...state]
-   } else {
-      return [...state, {...payload, count: 1}]
-   }
-}
+const count = 0;
 
 
 export const single_products_reducer = (state = defaultState, action) => {

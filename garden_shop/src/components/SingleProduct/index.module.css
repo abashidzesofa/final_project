@@ -193,7 +193,44 @@
    line-height: 26px;
    background-color: #92A134;
    color: #FFFFFF;
+}
 
+.description_block  {
+   margin: 32px auto;
+}
 
+.description_block p:first-child {
+   width: 548px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   color: #424436;
+}
 
+.description_block p:nth-child(2) {
+   width: 548px;
+   height: 227px;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20.8px;
+   color: #282828;
+   margin: 16px auto;
+}
+
+.description_block p:last-child {
+   width: 548px;
+   height: 21px;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.8px;
+   color: #424436;
+   cursor: pointer;
+}
+
+.description_block p:last-child:hover {
+   text-decoration: underline;
 }
