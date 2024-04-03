@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
-import Header from '../../components/Header'
 import s from './index.module.css'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { get_categories } from '../../requests/categories'
 import CategoriesPageCard from '../../components/CategoriesPageCard'
-import Footer from '../../components/Footer'
 
 export default function CategoriesPage() {
 
@@ -18,7 +16,7 @@ export default function CategoriesPage() {
    
    useEffect(() => {
       dispatch(get_categories)
-   }, [dispatch]);
+   }, []);
 
 
    return (
@@ -39,8 +37,9 @@ export default function CategoriesPage() {
             
             <div className={s.categories_page_container}>
                {
-                  categories_data.map(el => <CategoriesPageCard key={el.id} {...el}/>)
+                  categories_data.map(el => <CategoriesPageCard key={el.id} {...el} />)
                }
+               
             </div>
 
             

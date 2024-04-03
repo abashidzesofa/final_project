@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import { get_single_product } from '../../requests/products';
-import { domen } from '../../requests/categories';
 import SingleProduct from '../../components/SingleProduct';
 
 export default function SingleProductPage() {

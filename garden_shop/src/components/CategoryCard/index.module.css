@@ -3,13 +3,13 @@
    flex-direction: column;
    gap: 16px;
 }
-.categories_img {
+.category_card img {
    width: 316px;
    height: 350px;
    border-radius: 5%;
    object-fit: cover;
 }
-.title {
+.category_card p {
    font-family: 'Montserrat';
    font-size: 20px;
    font-weight: 500;

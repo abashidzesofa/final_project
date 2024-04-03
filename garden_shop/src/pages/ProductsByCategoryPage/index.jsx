@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom'
 import { get_products_by_category } from '../../requests/products';
 import ProductCard from '../../components/ProductCard';
 import s from './index.module.css'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import { Link } from 'react-router-dom';
 
 export default function ProductsByCategoryPage() {

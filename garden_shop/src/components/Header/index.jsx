@@ -9,8 +9,8 @@ export default function Header() {
    return (
       <section className={[s.header, 'wrapper'].join(' ')}>
          <div className={s.logo_container}>
-            <img src={ logo_plant } alt="logo" className={s.plant_img}/>
-            <img src={ logo_ground } alt="logo" className={s.ground_img}/>
+            <img src={ logo_plant } alt="logo"/>
+            <img src={ logo_ground } alt="logo"/>
          </div>
          <div className={s.nav_menu}>
             <Link to='/'> Main Page </Link>
@@ -20,7 +20,7 @@ export default function Header() {
          </div>
          <Link to='/cart'>
             <div className={s.cart_icon}>
-               <img src={cart_icon} alt="cart icon" className={s.cart_img}/>
+               <img src={cart_icon} alt="cart icon"/>
             </div>
          </Link>
          

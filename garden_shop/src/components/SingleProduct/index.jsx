@@ -1,9 +1,7 @@
 import React from 'react'
 
-export default function SingleProduct({ title }) {
+export default function SingleProduct() {
    return (
-      <div>
-         { title }
-      </div>
+      <div>SingleProduct</div>
    )
 }

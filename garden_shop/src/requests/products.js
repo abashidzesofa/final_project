@@ -1,6 +1,6 @@
 import { load_products_action } from "../store/reducers/products_reducer";
 import { domen } from "./categories";
-import { load_products_by_categories_action } from '../store/reducers/products_by_category';
+import { load_products_by_categories_action } from '../store/reducers/products_by_category_reducer';
 import { load_single_product_action } from "../store/reducers/single_product_reducer";
 
 

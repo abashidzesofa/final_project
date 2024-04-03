@@ -7,7 +7,9 @@ export default function SalesCard({ image, title, discont_price, price, id }) {
 
    const img = domen + image;
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
-   const ceil_price = Math.ceil(price);
+   const new_price = price.toFixed(1);
+   const new_discont = discont_price.toFixed(1);
+
    return (
       <Link to={`/product/${id}`}>
          <div className={s.sale_card}> 
@@ -20,8 +22,8 @@ export default function SalesCard({ image, title, discont_price, price, id }) {
             <div className={s.description_block}>
                <p> { title } </p>
                <div className={s.price_block}>
-                  <p> ${ ceil_price }</p> 
-                  <p> ${ discont_price }</p>
+                  <p> ${ new_discont }</p> 
+                  <p> ${ new_price }</p>
                </div>
             </div>
          </div>

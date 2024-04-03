@@ -1,4 +1,4 @@
-.sales_cards_container {
+.cards_container {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 32px;
@@ -7,13 +7,13 @@
 .buttons {
    position: relative;
    display: flex;
-   width: 475px;
+   width: 254px;
    height: 36px;
    gap: 15px;
    margin: 40px 0;
-}  
+}
 
-.buttons div:nth-child(odd) {
+.main_page_button, .all_products_button {
    font-family: 'Montserrat';
    font-size: 16px;
    font-weight: 500;
@@ -32,7 +32,7 @@
    color: #8B8B8B;
 }
 
-.all_sales_button {
+.all_products_button {
    color: #424436;
 }
 
@@ -44,22 +44,22 @@
    left: 125px;
 }
 
-.title {
-   width: 1360px;
-   height: 70px;
+.all_products_page h2 {
    font-family: 'Montserrat';
    font-size: 64px;
    font-weight: 700;
    line-height: 70.4px;
    text-align: left;
    color: #424436;
+   width: 1360px;
+   height: 70px;
    margin-bottom: 40px;
 }
 
 .sort_block {
-   width: 634px;
-   height: 36px;
-   display: flex;
-   gap: 40px;
    margin-bottom: 40px;
+   width: 908px;
+   height: 36px;
+
+
 }

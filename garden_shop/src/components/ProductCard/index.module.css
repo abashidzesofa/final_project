@@ -1,4 +1,8 @@
-.product_by_category_img {
+.imgs_block {
+   position: relative;
+}
+
+.imgs_block img {
    width: 315px;
    height: 284px;
    border-top: 1px solid #DDDDDD;
@@ -8,9 +12,6 @@
    border-bottom: 1px solid #DDDDDD;
 }
 
-.imgs_block {
-   position: relative;
-}
 .button_on_hover {
    display: none;
    position: absolute;
@@ -54,7 +55,7 @@
 
 .without_sale {
    display: none;
-}
+} 
 
 .without_discount {
    display: none;
@@ -114,7 +115,7 @@
    line-height: 26px;
    position: absolute;
    color: #8B8B8B;
-   top: 30px;
-   left: 100px;
+   top: 75%;
+   left: 40%;
    text-decoration: line-through;
 } 

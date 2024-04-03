@@ -19,12 +19,12 @@
    position: relative;
 }
 
-.plant_img {
+.logo_container img:first-child {
    width: 36px;
    height: 36px;
 }
 
-.ground_img {
+.logo_container img:last-child {
    width: 35.83px;
    height: 16.67px;
    position: absolute;
@@ -38,7 +38,7 @@
    cursor: pointer;
 }
 
-.cart_img {
+.cart_icon img {
    width: 48px;
    height: 48px;
    top: 40px;

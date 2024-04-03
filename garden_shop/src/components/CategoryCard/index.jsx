@@ -10,8 +10,8 @@ export default function CategoryCard( {image, title, id} ) {
    return (
       <Link to={`/products/${id}`}>
          <div className={s.category_card}>
-            <img src={img} alt={title} className={s.categories_img} />
-            <p className={s.title}> {title} </p>
+            <img src={ img } alt={ title }/>
+            <p> { title } </p>
          </div>
       </Link>
    )

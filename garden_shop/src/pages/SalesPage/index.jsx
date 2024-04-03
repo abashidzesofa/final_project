@@ -15,7 +15,7 @@ export default function SalesPage() {
    
    useEffect(() => {
       dispatch(get_products)
-   }, [dispatch]);
+   }, []);
 
 
 
@@ -23,11 +23,11 @@ export default function SalesPage() {
       <div className={[s.sales_page_container, 'wrapper'].join(' ')}>
          <section className={s.buttons}>
             <Link to='/'>
-                  <div className={s.main_page_button}>Main page</div>
+                  <div className={s.main_page_button}> Main page </div>
                </Link>
                <div className={s.buttons_line}></div>
                <Link to='/sales'>
-                  <div className={s.all_sales_button}>All sales</div>
+                  <div className={s.all_sales_button}> All sales </div>
                </Link>
             </section>
             <p className={s.title}> Discounted Items </p>
