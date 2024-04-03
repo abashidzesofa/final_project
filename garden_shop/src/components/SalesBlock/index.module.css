@@ -45,10 +45,6 @@ h4 {
    top: 35px;
 }
 
-
-
-
-
 .sales_container {
    display: grid;
    grid-template-columns: repeat(4, 1fr);

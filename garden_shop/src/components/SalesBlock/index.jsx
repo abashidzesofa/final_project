@@ -22,20 +22,18 @@ useEffect(() => {
             <h4>Sale</h4>
             <div className={s.sales_line}></div>
             <Link to='/sales'>
-               <div>
                   <div className={s.all_sales_div}> All sales </div>
-               </div>
             </Link>
          </div>
-            <div className={s.sales_container}>
-               {
-                  products_data
-                  .filter(el => el.discont_price !== null)
-                  .sort(() => Math.random() - 0.5)
-                  .slice(0, 4)
-                  .map(el => <SalesCard key={el.id} {...el}/>)
-               }
-            </div>
+         <div className={s.sales_container}>
+            {
+               products_data
+               .filter(el => el.discont_price !== null)
+               .sort(() => Math.random() - 0.5)
+               .slice(0, 4)
+               .map(el => <SalesCard key={el.id} {...el}/>)
+            }
+         </div>
          
       </section>
    )
