@@ -4,9 +4,8 @@ import { get_categories } from '../../requests/categories';
 import { Link } from 'react-router-dom';
 import s from './index.module.css'
 import { domen } from '../../requests/categories';
-import { decr_count_action, incr_count_action } from '../../store/reducers/single_product_reducer';
 
-export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description, count }) {
+export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description }) {
 
    const dispatch = useDispatch();
 
@@ -56,9 +55,9 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                </div>
                <div className={s.cart_block}>
                   <div className={s.count_block}>
-                     <button onClick={() => dispatch(decr_count_action(id))}> - </button>
-                     <p> { count }</p>
-                     <button onClick={() => dispatch(incr_count_action(id))}> + </button>
+                     <button> - </button>
+                     {/* <p> { count }</p> */}
+                     <button> + </button>
                   </div>
                   <div className={s.add_to_cart}>
                      <button> Add to cart </button>

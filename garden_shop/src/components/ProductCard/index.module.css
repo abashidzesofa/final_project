@@ -1,3 +1,8 @@
+.product_card_container {
+   position: relative;
+}
+
+
 .imgs_block {
    position: relative;
 }
@@ -15,7 +20,7 @@
 .button_on_hover {
    display: none;
    position: absolute;
-   bottom: 15%;
+   bottom: 30%;
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: #F26D22;
@@ -30,7 +35,7 @@
    width: 220px;
 }
 
-.imgs_block:hover .button_on_hover {
+.product_card_container:hover .button_on_hover {
    display: block;
 }
 

@@ -11,10 +11,11 @@ export default function SalesCard({ image, title, discont_price, price, id }) {
    const new_discont = discont_price.toFixed(1);
 
    return (
+      <div className={s.sales_card_container}>
       <Link to={`/product/${id}`}>
          <div className={s.sale_card}> 
             <div className={s.img_block}>
-            <button className={s.button_on_hover}>Add to cart</button>
+            
                <img src={ img } alt={ title } className={s.sales_img}/>
                <div> { discount_percentage}% </div> 
                
@@ -28,5 +29,7 @@ export default function SalesCard({ image, title, discont_price, price, id }) {
             </div>
          </div>
       </Link>
+      <button className={s.button_on_hover}>Add to cart</button>
+      </div>
    )
 }
