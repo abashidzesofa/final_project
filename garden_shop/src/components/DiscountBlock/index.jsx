@@ -32,7 +32,7 @@ export default function DiscountBlock() {
       <section className={['wrapper', s.discount_block].join(' ')} >
       <h3> 5 % off on the first order </h3>
       <img src={ background_image }  alt="background image"/>
-      <form onSubmit={add_discount_user}>
+      <form onSubmit={add_discount_user} className={s.form}>
          <input type='text' placeholder='Name' name='name'/>
          <input type='tel' placeholder='Phone number' name='phone_number'/>
          <input type='email' placeholder='Email' name='mail'/>
