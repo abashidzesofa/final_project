@@ -1,3 +1,6 @@
+.sales_card_container {
+   position: relative;
+}
 .sale_card {
    display: flex;
    flex-direction: column;
@@ -95,7 +98,7 @@
 .button_on_hover {
    display: none;
    position: absolute;
-   bottom: 15%;
+   bottom: 35%;
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: #F26D22;
@@ -112,6 +115,6 @@
 }
 
 
-.img_block:hover .button_on_hover {
+.sales_card_container:hover .button_on_hover {
    display: block;
 }
