@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { get_categories } from '../../requests/categories';
 import { Link } from 'react-router-dom';
@@ -25,6 +25,15 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
    const class_name_discount = discont_price === null ? s.without_discount : s.with_discount; 
    const new_price = discont_price === null? price : discont_price;
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
+
+
+   const [expanded, setExpanded] = useState(false);
+
+   const toggleExpand = () => {
+      setExpanded(!expanded);
+   };
+
+   
    return (
       <div className='wrapper'>
          <section className={s.buttons}>
@@ -63,10 +72,10 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                      <button> Add to cart </button>
                   </div>
             </div>
-            <div className={s.description_block}>
+            <div className={`${s.description_block} ${expanded ? s.expand : ''}`}>
                <p> Description </p>
-               <p> { description } </p>
-               <p> Read more </p>
+               <p> {description} </p>
+               <p onClick={toggleExpand}> Read {expanded ? 'less' : 'more'} </p>
             </div>
             </div>
          </section>
