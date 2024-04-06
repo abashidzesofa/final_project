@@ -5,6 +5,7 @@
    position: relative;
    margin: 0 auto;
    padding: 16px 0;
+   max-width: 1440px;
 }
 
 .logo_container {
@@ -62,7 +63,7 @@
    line-height: 26px;
 }
 
-/*Home_1000*/
+
 @media(max-width: 1000px) {   
    .header {
       display: flex;

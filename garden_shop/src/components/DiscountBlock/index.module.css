@@ -7,7 +7,7 @@
    padding: 20px;
    border: 1px solid #ccc;
    background-color: #f9f9f9;
-   
+   border-radius: 10px;
 }
 
 .back_image {
@@ -77,4 +77,53 @@ form > input {
    border: none;
    cursor: pointer;
    width: 516px;
+}
+
+@media(max-width: 1000px) {
+   .discount_block {
+      display: block;
+      flex-direction: column;
+      position: relative;
+      height: 462px;
+      padding: 32px;
+      width: 960px;
+   }
+
+   .back_image {
+
+      max-width: 767px;
+      max-height: 336px;
+      width: 70%;
+      height: 70%;
+      gap: 0 10px;
+      opacity: 0px;
+      position: absolute;
+      object-fit: cover;
+      overflow: hidden;
+      left: -20%;
+
+   }
+   
+   form {
+      display: flex;
+      gap: 12px;
+      width: 450px;
+      height: 206px;
+      position: absolute;
+      right: 16px;
+
+   }
+
+
+   form > input { 
+      height: 58px;
+   
+   }
+
+   .button {
+      width: 450px;
+      height: Hug (58px)px;
+      
+   }
+
 }

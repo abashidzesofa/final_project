@@ -8,8 +8,8 @@
    height: 600px;
    max-width: 1440px; 
    margin: 0 auto;
-   background-position: center;   /*для центрования картинки*/
-   background-size: cover;        /**/   
+   background-position: center;   
+   background-size: cover;        
    padding: 80px 40px 210px 40px;
 }
 
@@ -19,7 +19,6 @@
    width: 1000px;
    height: 250px;
    line-height: 120%;
-   /* font-weight: 900; */
    
    }
 
@@ -37,6 +36,7 @@
 
 @media(max-width: 1000px) {
    .banner {
+   
      display: block;
      height: 476px;
      background-position: center;
