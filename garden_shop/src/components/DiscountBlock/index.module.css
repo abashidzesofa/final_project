@@ -122,8 +122,55 @@ form > input {
 
    .button {
       width: 450px;
-      height: Hug (58px)px;
       
+   }
+
+}
+
+
+@media(max-width: 768px) {
+   .discount_block {
+      display: block;
+      flex-direction: column;
+      position: relative;
+      height: 536px;
+      padding: 32px;
+      width: 728px;
+   }
+
+   .back_image {
+
+      max-width: 696px;
+      max-height: 356px;
+      width: 90%;
+      object-fit: cover;
+      overflow: hidden;
+      left: -44%;
+
+   }
+   
+   form {
+      /* display: flex; */
+      display: grid;
+      /* display: block; */
+      gap: 12px;
+      width: 334px;
+      height: 324px;
+      position: absolute;
+      right: 20px;
+      bottom: 1%;
+      
+   }
+
+
+   form > input { 
+      height: 58px;
+   
+   }
+
+   .button {
+      width: 334px;
+      margin: 32px 0;
    }
 
 }

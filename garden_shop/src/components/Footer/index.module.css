@@ -166,3 +166,64 @@
         margin-left: 0;
     }
 }
+
+
+@media(max-width: 768px) {
+    
+    .section {
+        height: 832px;
+        width: 728px;
+    
+    }
+    
+    .h2 {
+        width: 728px;
+        height: 62px;
+        font-size: 56px;  
+    } 
+
+    .link_card_phone {
+        width: 479px;
+        height: 150px;
+        margin-left: 0;
+        
+    }
+    
+    .link_card_adress {
+        width: 479px;
+        height: 238px;
+        margin-left: 0;
+    }
+
+    .right_card_socials {
+        width: 229px;
+        height: 150px;
+        margin-right: 0;
+     }
+     
+     .right_card_hours {
+        width: 229px;
+        height: 238px;
+        margin-right: 0; 
+      }
+ 
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 728px;
+        height: 408px;    
+    } 
+
+    .right_card_hours > .p{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;     
+      }
+
+    .map {
+        width: 728px;
+       
+    }
+}

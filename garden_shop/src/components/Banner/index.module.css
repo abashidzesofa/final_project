@@ -36,14 +36,7 @@
 
 @media(max-width: 1000px) {
    .banner {
-   
-     display: block;
      height: 476px;
-     background-position: center;
-     background-size: cover; 
-     flex-direction: column;
-     justify-content: center;
-     display: flex;
      padding: 60px 20px 120px 20px;
    }
  
@@ -55,7 +48,21 @@
      line-height: 120%;
    }
  
-   .header div {
-     display: none;
-   }
  }
+
+
+@media(max-width: 768px) {
+  .banner {
+    height: 634px;
+    padding: 60px 20px 326px 20px;
+  }
+
+  .banner h1 {
+   
+    font-size: 66px;
+    width: 728px;
+    height: 248px;
+    line-height: 110%;
+  }
+
+}
