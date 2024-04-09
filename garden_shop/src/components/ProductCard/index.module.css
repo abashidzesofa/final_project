@@ -13,7 +13,7 @@
    border-top: 1px solid #DDDDDD;
    border-top-left-radius: 7px;
    border-top-right-radius: 7px;
-   object-fit: cover;
+   object-fit: contain;
    border-bottom: 1px solid #DDDDDD;
 }
 
