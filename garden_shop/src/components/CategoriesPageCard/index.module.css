@@ -1,0 +1,26 @@
+.categories {
+   display: flex;
+   flex-direction: column;
+   width: 248px;
+   height: 392px;
+   gap: 16px;
+   cursor: pointer;
+}
+
+.categories_img {
+   width: 248px;
+   height: 350px;
+   border-radius: 10px;
+   object-fit: cover;
+}
+
+.categories_title {
+   width: 248px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 26px;
+   text-align: center;
+   color: #282828;
+}

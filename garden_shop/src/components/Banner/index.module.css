@@ -40,8 +40,7 @@
      padding: 60px 20px 120px 20px;
    }
  
-   .banner h1 {
-    
+   .banner h1 {  
      font-size: 86px;
      width: 940px;
      height: 296px;
@@ -50,7 +49,6 @@
  
  }
 
-
 @media(max-width: 768px) {
   .banner {
     height: 634px;
@@ -58,7 +56,6 @@
   }
 
   .banner h1 {
-   
     font-size: 66px;
     width: 728px;
     height: 248px;

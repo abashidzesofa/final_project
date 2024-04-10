@@ -10,7 +10,7 @@
    border-radius: 10px;
 }
 
-.back_image {
+.discount_block img {
    object-fit: cover;
    width: 748px;
    height: 360px;
@@ -28,7 +28,7 @@
    color: #FFFFFF;
 }
 
-form {
+.form {
    display: flex;
    flex-direction: column;
    gap: 16px;
@@ -63,7 +63,7 @@ form > input {
 
 }
 
-.button {
+.form button {
    padding: 16px 32px;
    border-radius: 7px;
    background-color: rgba(255, 255, 241, 1);
@@ -81,52 +81,35 @@ form > input {
 
 @media(max-width: 1000px) {
    .discount_block {
-      display: block;
-      flex-direction: column;
-      position: relative;
       height: 462px;
       padding: 32px;
       width: 960px;
+      overflow: hidden;
    }
 
-   .back_image {
-
-      max-width: 767px;
-      max-height: 336px;
-      width: 70%;
-      height: 70%;
-      gap: 0 10px;
-      opacity: 0px;
+   .discount_block img {
+      width: 652px;
+      height: 336px;
       position: absolute;
-      object-fit: cover;
-      overflow: hidden;
-      left: -20%;
-
+      object-fit: contain;
+      left: -19%;
+      bottom: -3%;
    }
    
-   form {
-      display: flex;
-      gap: 12px;
+   .form {
       width: 450px;
       height: 206px;
-      position: absolute;
-      right: 16px;
-
+      right: 20px;
    }
-
 
    form > input { 
       height: 58px;
-   
    }
 
-   .button {
-      width: 450px;
-      
+   .form button {
+      width: 450px;   
    }
-
 }
-
 
 @media(max-width: 768px) {
    .discount_block {
@@ -134,43 +117,32 @@ form > input {
       flex-direction: column;
       position: relative;
       height: 536px;
-      padding: 32px;
+      padding: 24px;
       width: 728px;
    }
 
-   .back_image {
-
-      max-width: 696px;
-      max-height: 356px;
-      width: 90%;
-      object-fit: cover;
-      overflow: hidden;
-      left: -44%;
-
+ 
+   .discount_block img {
+      width: 696px;
+      height: 356px;
+      left: -47%;
+      bottom: -2%;
    }
    
-   form {
-      /* display: flex; */
-      display: grid;
-      /* display: block; */
-      gap: 12px;
+   .form {
+      display: flex;
       width: 334px;
       height: 324px;
       position: absolute;
       right: 20px;
-      bottom: 1%;
-      
+      bottom: 3%;
    }
-
 
    form > input { 
       height: 58px;
-   
    }
 
-   .button {
-      width: 334px;
-      margin: 32px 0;
+   .form button {
+      width: 334px;   
    }
-
 }

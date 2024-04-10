@@ -6,6 +6,8 @@
    margin: 0 auto;
    padding: 16px 0;
    max-width: 1440px;
+   height: 128px;
+   align-items: center;
 }
 
 .logo_container {
@@ -18,14 +20,15 @@
    justify-content: center;
    align-items: center;
    position: relative;
+   margin-left: 40px;
 }
 
-.plant_img {
+.logo_container img:first-child {
    width: 36px;
    height: 36px;
 }
 
-.ground_img {
+.logo_container img:last-child {
    width: 35.83px;
    height: 16.67px;
    position: absolute;
@@ -35,11 +38,11 @@
 .cart_icon {
    width: 48px;
    height: 48px;
-   margin: 16px;
+   margin: 40px;
    cursor: pointer;
 }
 
-.cart_img {
+.cart_icon img {
    width: 48px;
    height: 48px;
    top: 40px;
@@ -61,51 +64,25 @@
    font-size: 20px;
    font-weight: 500;
    line-height: 26px;
+   color: #282828;
 }
 
 
 @media(max-width: 1000px) {   
-   .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-   }
-
    .nav_menu {
-      display: flex;
-      justify-content: center;
-      height: 26px;
-      gap: 32px;
-      margin: 24px auto;
-      align-items: center;
       position: absolute;
-      padding: 0 230px;
+      padding: 0 240px;
    }
  
    .logo_container {
-   width: 70px;
-   height: 70px;
-   border-radius: 50%;
-   background-color: #92A134;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   position: relative;
    margin-left: 20px;
    }
    
    .cart_icon {
-      width: 48px;
-      height: 48px;
-      margin: 16px;
-      cursor: pointer;
-      margin-right: 20px;
+     margin: 20px;
    }
 
  }
-
 
  @media(max-width: 768px) {   
    .header {

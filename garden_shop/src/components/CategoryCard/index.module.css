@@ -3,17 +3,30 @@
    flex-direction: column;
    gap: 16px;
 }
-.categories_img {
+.category_card img {
    width: 316px;
    height: 350px;
    border-radius: 5%;
    object-fit: cover;
 }
-.title {
+.category_card p {
    font-family: 'Montserrat';
    font-size: 20px;
    font-weight: 500;
    line-height: 26px;
    text-align: center;
    color: #424436;
+}
+
+@media(max-width: 1000px) {
+   .category_card img {
+      width: 225px;
+      height: 250px;  
+   }
+}
+
+@media(max-width: 768px) {
+   .category_card img {
+      width: 354px;
+   }
 }

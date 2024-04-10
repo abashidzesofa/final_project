@@ -1,10 +1,17 @@
+.sales_card_container {
+   position: relative;
+}
 .sale_card {
    display: flex;
    flex-direction: column;
    gap: 20px;
    border: 0.5px solid #FFFFFF;
-   background-color: #FFFFFF;
+   background-color:#FFFFFF;
    border-radius: 7px;
+   cursor: pointer;
+   width: 316px;
+   height: 422px;
+
 }
 
 .sales_img {
@@ -12,8 +19,10 @@
    height: 284px;
    object-fit: cover;
    position: relative;
+   border-top: 1px solid #DDDDDD;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
    border-bottom: 1px solid #DDDDDD;
-   border-radius: 7px;
 }
 
 .img_block {
@@ -41,6 +50,10 @@
 
 }
 
+.description_block {
+   margin-top: 20px;
+}
+
 .description_block > p {
    font-family: 'Montserrat';
    font-size: 20px;
@@ -59,7 +72,7 @@
    display: flex;
    gap: 15px;
    position: relative;
-   margin: 16px 32px;
+   margin: 16px 32px 32px 32px;
 }
 .price_block > p:nth-child(1) {
    font-family: 'Montserrat';
@@ -78,6 +91,92 @@
    position: absolute;
    color: #8B8B8B;
    top: 15px;
-   left: 100px;
+   left: 130px;
    text-decoration: line-through;
 } 
+
+.button_on_hover {
+   display: none;
+   position: absolute;
+   bottom: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #F26D22;
+   color: #FFFFFF;
+   padding: 16px 32px;
+   border-radius: 7px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   text-align: center;
+   width: 220px;
+   z-index: 1;
+}
+
+
+.sales_card_container:hover .button_on_hover {
+   display: block;
+}
+
+@media(max-width: 1000px) {
+   .category_card img {
+      width: 225px;
+      height: 250px;
+      border-radius: 5%;
+      object-fit: cover;
+   }
+
+   .sales_img {
+      width: 225px;
+      height: 250px;
+   }
+
+   .sale_card {
+      width: 225px;
+      height: 398px;
+   }
+
+   .description_block {
+      margin-top: 0;
+   }
+   
+   .description_block > p {
+      width: 190px;
+      margin: 0 20px;
+   }
+
+   .price_block {
+      margin:32px 20px;
+   }
+}
+
+@media(max-width: 768px) {
+   .category_card img {
+      width: 225px;
+      height: 250px;
+   }
+
+   .sales_img {
+      width: 354px;
+      height: 250px;
+   }
+
+   .sale_card {
+      width: 354px;
+      height: 372px;
+   }
+
+   .description_block {
+      margin-top: 0;
+   }
+   
+   .description_block > p {
+      width: 315px;
+      margin: 0 20px;
+   }
+
+   .price_block {
+      margin:20px ;
+   }
+}

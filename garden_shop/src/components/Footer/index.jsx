@@ -1,5 +1,7 @@
 import React from 'react'
 import s from './index.module.css'
+import instagram from './instagram.png'
+import whatsapp from './whatsapp.png'
 
 export default function Footer() {
   return (
@@ -15,7 +17,13 @@ export default function Footer() {
 
       <div className={s.right_card_socials}>
        <p className={s.small}>Socials</p>
-       <p className={s.p}></p>
+      <a href="https://www.instagram.com" target="_blank"> 
+       <img className={s.instagram} src={instagram} alt="instagram" />
+       </a>
+       <a href="https://www.whatsapp.com" target="_blank">
+       <img  className={s.whatsapp} src={whatsapp} alt="whatsapp" />
+       </a>
+       
 
       </div>
 
