@@ -4,8 +4,14 @@ import { get_categories } from '../../requests/categories';
 import { Link } from 'react-router-dom';
 import s from './index.module.css'
 import { domen } from '../../requests/categories';
+import { addToCartAction } from '../../store/reducers/cart_reducer';
 
-export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description }) {
+
+
+
+
+
+export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description, count}) {
 
    const dispatch = useDispatch();
 
@@ -25,6 +31,13 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
    const class_name_discount = discont_price === null ? s.without_discount : s.with_discount; 
    const new_price = discont_price === null? price : discont_price;
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
+
+   const cartState = useSelector(store=>store.cart)
+   
+   
+
+
+
    return (
       <div className='wrapper'>
          <section className={s.buttons}>
@@ -55,12 +68,12 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                </div>
                <div className={s.cart_block}>
                   <div className={s.count_block}>
-                     <button> - </button>
-                     {/* <p> { count }</p> */}
+                     <button > - </button>
+                      <p> {count} </p> 
                      <button> + </button>
                   </div>
                   <div className={s.add_to_cart}>
-                     <button> Add to cart </button>
+                     <button onClick={()=>dispatch(addToCartAction({id, categoryId, title, image, price, discont_price}))}> Add to cart </button>
                   </div>
             </div>
             <div className={s.description_block}>

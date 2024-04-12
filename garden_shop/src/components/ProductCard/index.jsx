@@ -2,6 +2,8 @@ import React from 'react'
 import s from './index.module.css'
 import { domen } from '../../requests/categories'
 import { Link } from 'react-router-dom';
+import { addToCartAction } from '../../store/reducers/cart_reducer';
+import { useDispatch } from 'react-redux';
 
 // написать action, который добавляет товар в корзину при клике на button_on_hover
 
@@ -15,7 +17,10 @@ export default function ProductCard({ image, title, price, discont_price, id}) {
    const img = domen + image;
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
 
+   const dispatch=useDispatch();
 
+   
+   
    return (
       <div className={s.product_card_container}>
       <Link to={`/product/${id}`}>
@@ -33,9 +38,9 @@ export default function ProductCard({ image, title, price, discont_price, id}) {
                
                </div>
             </div>
-         </div>
+            </div>
       </Link>
-      <button className={s.button_on_hover}>Add to cart</button>
+      <button className={s.button_on_hover} onClick={()=>dispatch(addToCartAction(image, title, price, discont_price, id))}>Add to cart</button>
       </div>
    )
 }

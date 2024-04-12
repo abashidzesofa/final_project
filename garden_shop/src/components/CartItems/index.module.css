@@ -1,0 +1,77 @@
+.cart {
+    display: flex;
+    width: 780px;
+    height: 180px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    gap: 32px;
+    border-radius: 5px;
+    
+}
+
+.img {
+    width: 200px;
+    height: 180px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.button_block {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 58px;
+    border: 1px, 0px,1px, 0px solid rgba(221, 221, 221, 1);
+    margin-bottom: 32px;
+    
+}
+
+.button_one {
+    width: 58px;
+   height: 58px;
+   border: 1px solid #DDDDDD;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #FFFFFF;
+   color: #FFFFFF;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+    
+}
+
+.count {
+    width: 96px;
+   height: 58px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+}
+
+.price {
+    width: 87px;
+    height: 44px;
+    font: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    color: rgba(66, 68, 54, 1);
+    margin-bottom: 32px;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 516px;
+    height: 26px;
+    gap: 16px;
+    margin-top: 32px;
+    margin-right: 32px;
+}
