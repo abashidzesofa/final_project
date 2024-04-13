@@ -12,7 +12,7 @@ export default function CategoriesPage() {
 
    
    const categories_data = useSelector(store => store.categories);
-   console.log(categories_data);
+   // console.log(categories_data);
    
    useEffect(() => {
       dispatch(get_categories)

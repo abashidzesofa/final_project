@@ -11,7 +11,7 @@ export default function CategoriesBlock() {
 
    
 const categories_data = useSelector(store => store.categories);
-console.log(categories_data);
+
 
 useEffect(() => {
    dispatch(get_categories)

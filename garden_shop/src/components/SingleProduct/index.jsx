@@ -4,8 +4,9 @@ import { get_categories } from '../../requests/categories';
 import { Link } from 'react-router-dom';
 import s from './index.module.css'
 import { domen } from '../../requests/categories';
+import { add_to_cart_action } from '../../store/reducers/cart_reducer';
 
-export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description }) {
+export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description, count }) {
 
    const dispatch = useDispatch();
 
@@ -33,6 +34,8 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
       setExpanded(!expanded);
    };
 
+
+   
    
    return (
       <div className='wrapper'>
@@ -69,7 +72,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                      <button> + </button>
                   </div>
                   <div className={s.add_to_cart}>
-                     <button> Add to cart </button>
+                     <button onClick={() => dispatch(add_to_cart_action({id, image, title, price, discont_price, count}))}> Add to cart </button>
                   </div>
             </div>
             <div className={`${s.description_block} ${expanded ? s.expand : ''}`}>
