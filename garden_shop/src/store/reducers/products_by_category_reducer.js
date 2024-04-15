@@ -22,22 +22,22 @@ export const products_by_category_reducer = (state = defaultState, action) => {
    //       state.sort((a, b) => b.price - a.price)
    //    }
    //    return [...state]
-   } else if (action.type === GET_CHECK_PRODUCTS) {
-      if(action.payload) {
-         return state.map(el => {
-            if(el.discont_price !== null) {
-               el.visible = true
-            } else if(el.discont_price === null) {
-               el.visible = false
-            }
-            return el
-         })
-      } else {
-         return state.map(el => {
-            el.visible = true
-            return el
-         })
-      }
+   // } else if (action.type === GET_CHECK_PRODUCTS) {
+   //    if(action.payload) {
+   //       return state.map(el => {
+   //          if(el.discont_price !== null) {
+   //             el.visible = true
+   //          } else if(el.discont_price === null) {
+   //             el.visible = false
+   //          }
+   //          return el
+   //       })
+   //    } else {
+   //       return state.map(el => {
+   //          el.visible = true
+   //          return el
+   //       })
+   //    }
    }
    return state
 }

@@ -33,13 +33,19 @@ export default function SalesPage() {
                </Link>
             </section>
             <p className={s.title}> Discounted Items </p>
-            <section className={s.sort_forms}>
-            <span>Sorted</span>
-            <select onInput={order}>
-               <option value="name">By name (A-Z)</option>
-               <option value="price_asc">By price (ASC)</option>
-               <option value="price_desc">By price (DESC)</option>
-            </select>
+            <section className={s.sales_sort_forms}>
+               <div>
+
+               </div>
+            <div className={s.sorted}>
+               <span>Sorted</span>
+               <select onInput={order}>
+                  <option value="default" defaultValue>By default</option>
+                  <option value="name">By name (A-Z)</option>
+                  <option value="price_asc">By price (ASC)</option>
+                  <option value="price_desc">By price (DESC)</option>
+               </select>
+            </div>
          </section>
          <section className={s.sales_cards_container}>
             {

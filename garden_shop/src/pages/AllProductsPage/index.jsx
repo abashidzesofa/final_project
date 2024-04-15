@@ -42,16 +42,24 @@ export default function AllProductsPage() {
          </section>
          <h2> All products </h2>
          <section className={s.sort_forms}>
-         <label>
-            <span>Discounted items</span>
-            <input type="checkbox" checked={checked} onChange={handle_check} onClick={handle_click}/>
-         </label>
-            <span>Sorted</span>
-            <select onInput={order}>
-               <option value="name">By name (A-Z)</option>
-               <option value="price_asc">By price (ASC)</option>
-               <option value="price_desc">By price (DESC)</option>
-            </select>
+            <div>
+            </div>
+            <div className={s.checked}>
+               <label>
+                  <span>Discounted items</span>
+                  <input type="checkbox" checked={checked} onChange={handle_check} onClick={handle_click}/>
+               </label>
+            </div>
+            <div className={s.sorted}>
+               <span>Sorted</span>
+               <select onInput={order}>
+                  <option value="default" defaultValue>By default</option>
+                  <option value="name">By name (A-Z)</option>
+                  <option value="price_asc">By price (ASC)</option>
+                  <option value="price_desc">By price (DESC)</option>
+               </select>
+            </div>
+            
          
          </section>
          <section className={s.cards_container}>

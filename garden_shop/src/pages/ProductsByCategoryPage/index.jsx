@@ -29,9 +29,9 @@ export default function ProductsByCategoryPage() {
 
    // console.log(products_by_category_state);
 
-   const order = event => {
-      dispatch(sort_products_action(event.target.value));
-   }
+   // const order = event => {
+   //    dispatch(sort_products_action(event.target.value));
+   // }
 
    return (
 
@@ -58,7 +58,8 @@ export default function ProductsByCategoryPage() {
 
          <section className={s.sort_forms}>
             <span>Sorted</span>
-            <select onClick={order}>
+            {/* <select onClick={order}> */}
+            <select>
                <option value="name">By name (A-Z)</option>
                <option value="price_asc">By price (ASC)</option>
                <option value="price_desc">By price (DESC)</option>
@@ -71,7 +72,7 @@ export default function ProductsByCategoryPage() {
          <section className={s.cards_container}>
          {
             data&&data
-            .filter(el => el.visible === true)
+            // .filter(el => el.visible === true)
             .map(el => <ProductCard key={el.id} {...el} />)
          }
          </section>
