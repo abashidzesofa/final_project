@@ -2,11 +2,14 @@ import React from 'react'
 import s from './index.module.css'
 import { domen } from '../../requests/categories'
 import { Link } from 'react-router-dom';
+import { add_to_cart_action } from '../../store/reducers/cart_reducer';
+import { useDispatch } from 'react-redux'
 
 // написать action, который добавляет товар в корзину при клике на button_on_hover
 
-export default function ProductCard({ image, title, price, discont_price, id}) {
+export default function ProductCard({ image, title, price, discont_price, id, count}) {
 
+   const dispatch = useDispatch();
    const class_name = discont_price === null ? s.without_sale : s.with_sale; //  для контейнера со скидкой(%)
    const class_name_discount = discont_price === null ? s.without_discount : s.with_discount; // для отображения цены (price)
    const new_price = discont_price === null? price : discont_price; // для тех карточек, у которых нет скидки
@@ -35,7 +38,7 @@ export default function ProductCard({ image, title, price, discont_price, id}) {
             </div>
          </div>
       </Link>
-      <button className={s.button_on_hover}>Add to cart</button>
+      <button className={s.button_on_hover} onClick={() => dispatch(add_to_cart_action({id, image, title, count, price, discont_price}))}>Add to cart</button>
       </div>
    )
 }

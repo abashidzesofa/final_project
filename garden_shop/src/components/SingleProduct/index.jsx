@@ -4,11 +4,32 @@ import { get_categories } from '../../requests/categories';
 import { Link } from 'react-router-dom';
 import s from './index.module.css'
 import { domen } from '../../requests/categories';
-
+import { add_single_to_cart_action } from '../../store/reducers/cart_reducer';
 export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description }) {
 
    const dispatch = useDispatch();
 
+   const [error_message, setErrorMessage] = useState('');
+   const [count, setCount] = useState(0);
+   const incr_count = () => {
+      setCount(count + 1);
+   };
+
+   const decr_count = () => {
+      if (count > 0) {
+         setCount(count - 1);
+      }
+   };
+   const add_to_cart = () => {
+      if (count === 0) {
+         setErrorMessage("Please select quantity");
+         return;
+      }
+      dispatch(add_single_to_cart_action({id, image, title, price, discont_price, count}))
+      setErrorMessage('');
+      setCount(0);
+   };
+   
    useEffect(() => {
       dispatch(get_categories)
    },  []);
@@ -33,6 +54,8 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
       setExpanded(!expanded);
    };
 
+
+   
    
    return (
       <div className='wrapper'>
@@ -64,12 +87,13 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                </div>
                <div className={s.cart_block}>
                   <div className={s.count_block}>
-                     <button> - </button>
-                     {/* <p> { count }</p> */}
-                     <button> + </button>
+                     <button onClick={() => decr_count()}> - </button>
+                     <p> { count }</p>
+                     <button onClick={() => incr_count()}> + </button>
                   </div>
                   <div className={s.add_to_cart}>
-                     <button> Add to cart </button>
+                     <button onClick={add_to_cart}> Add to cart </button>
+                     <p style={{ color: 'red' }}>{error_message}</p>
                   </div>
             </div>
             <div className={`${s.description_block} ${expanded ? s.expand : ''}`}>
