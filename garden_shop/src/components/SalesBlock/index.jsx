@@ -11,7 +11,6 @@ export default function SalesBlock() {
 
    
 const products_data = useSelector(store => store.products);
-console.log(products_data);
 
 useEffect(() => {
    dispatch(get_products)
