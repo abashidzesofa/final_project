@@ -36,3 +36,18 @@
    color: #8B8B8B;
    margin-bottom: 32px;
 }
+.error_container button {
+   width: 209px;
+   height: 58px;
+   padding: 16px 56px 16px 56px;
+   border: 1px solid #92A134;
+   border-radius: 10px;
+   background-color: #92A134;
+   color: #FFFFFF;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   text-align: center;
+   white-space: nowrap;
+}
