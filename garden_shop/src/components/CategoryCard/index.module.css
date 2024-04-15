@@ -30,3 +30,22 @@
       width: 354px;
    }
 }
+
+@media(max-width: 480px) {
+   .category_card img {
+      width: 210px;
+      height: 257px;
+   }
+}
+
+@media(max-width: 360px) {
+   .category_card img {
+      width: 320px;
+      height: 220px;
+   }
+
+   .category_card p {
+      font-size: 18px;
+      line-height: 23px;
+   }
+}

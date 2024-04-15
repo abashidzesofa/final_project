@@ -68,6 +68,37 @@
 }
 
 
+.burger {
+   display: flex;
+   position: relative;
+   z-index: 50;
+   align-items: center;
+   justify-content: flex-end;
+   width: 32px;
+   height: 20px;
+   display: none;
+}
+
+.burger span{
+   height: 3px;
+   width: 100%;
+   transform: scale(1);
+   background-color: #424436          
+   
+}
+
+.burger::before, .burger::after{
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 100%;
+   background-color: #282828;
+   transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0}
+.burger::after { bottom: 0}
+
 @media(max-width: 1000px) {   
    .nav_menu {
       position: absolute;
@@ -87,10 +118,113 @@
  @media(max-width: 768px) {   
    .header {
      height: 110px;
+     width: 768px;
+   }
+
+   .logo_container {
+      margin-left: 20px;
    }
 
    .nav_menu {
-      gap: 16px;
-      padding: 0 143px;    
+      margin-top: 0;
+      gap: 20px;
+      padding: 44px 143px 40px 143px;   
+      width: 769px; 
+   }  
+
+   .cart_icon {
+      margin: 20px;
+    }
+
+ }
+
+ @media(max-width: 480px) {   
+   .header {
+     height: 68px;
+     width: 440px;
+   }
+
+   .logo_container {
+      width: 44px;
+      height: 44px;
+      margin-left: 0;
+   }
+
+   
+   .logo_container img:first-child {
+      width: 22px;
+      height: 22px;
+   }
+
+   .logo_container img:last-child {
+      width: 23px;
+      height: 11px;
+      position: absolute;
+      top: 35px;
+   }
+   
+   .cart_icon {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 80px;
+      width: 32px;
+      height: 32px;
+    }
+    .cart_icon img {
+      width: 32px;
+      height: 32px;
+   }
+
+   .nav_menu {
+   display: none;    
+   }  
+     /*burger*/
+   .burger {
+      /* display: block; */
+      width: 44px;
+      height: 44px;
+
+   }
+ }
+
+ @media(max-width: 360px) {   
+   .header {
+     height: 68px;
+     width: 440px;
+   }
+
+   .logo_container {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      margin-left: 20px;
+   }
+
+   
+   .logo_container img:first-child {
+      width: 22px;
+      height: 22px;
+   }
+
+   .logo_container img:last-child {
+      width: 23px;
+      height: 11px;
+      position: absolute;
+      top: 35px;
+   }
+   
+   .cart_icon {
+      margin: 16px 84px 20px 0;
+      width: 32px;
+      height: 32px;
+    }
+    .cart_icon img {
+      width: 32px;
+      height: 32px;
+      margin-left: -80px;
+   }
+
+   .nav_menu {
+   display: none;    
    }  
  }

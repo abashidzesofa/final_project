@@ -63,3 +63,46 @@
   }
 
 }
+
+@media(max-width: 480px) {
+  .banner {
+    height: 600px;
+  }
+
+  .banner h1 {
+    font-size: 60px;
+    width: 410px;
+    height: 264px;
+    line-height: 66px;
+    margin-top: 80px;
+    
+   
+  }
+  
+  .banner button {
+    font-size: 18px;
+    width: 199px;
+    height: 47px; 
+    margin-top: 24px;
+  
+ }  
+}
+
+@media(max-width: 360px) {
+ 
+  .banner h1 {
+    font-size: 52px;
+    width: 320px;
+    height: 299px;
+    line-height: 57px;
+    padding: 50px 20px 71px 0px;
+
+  }
+  
+  .banner button {
+    font-size: 18px;
+    width: 199px;
+    height: 47px;
+ } 
+
+}

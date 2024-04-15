@@ -81,24 +81,24 @@ form > input {
 
 @media(max-width: 1000px) {
    .discount_block {
-      height: 462px;
+      height: 434px;
       padding: 32px;
       width: 960px;
       overflow: hidden;
    }
 
    .discount_block img {
-      width: 652px;
-      height: 336px;
+      width: 602px;
+      height: 308px;
       position: absolute;
       object-fit: contain;
-      left: -19%;
-      bottom: -3%;
+      left: -14%;
+      bottom: -2%;
    }
    
    .form {
       width: 450px;
-      height: 206px;
+      height: 198px;
       right: 20px;
    }
 
@@ -107,7 +107,8 @@ form > input {
    }
 
    .form button {
-      width: 450px;   
+      width: 450px; 
+      margin-top: 0px;  
    }
 }
 
@@ -116,16 +117,21 @@ form > input {
       display: block;
       flex-direction: column;
       position: relative;
-      height: 536px;
+      height: 426px;
       padding: 24px;
       width: 728px;
    }
 
- 
+   .discount_block > h3 {
+      width: 680px;
+      font-size: 50px;
+      line-height: 60px;
+   }
+
    .discount_block img {
-      width: 696px;
-      height: 356px;
-      left: -47%;
+      width: 602px;
+      height: 308px;
+      left: -34%;
       bottom: -2%;
    }
    
@@ -135,7 +141,7 @@ form > input {
       height: 324px;
       position: absolute;
       right: 20px;
-      bottom: 3%;
+      bottom: 0;
    }
 
    form > input { 
@@ -144,5 +150,83 @@ form > input {
 
    .form button {
       width: 334px;   
+      margin-top: 5px;
+   }
+}
+
+@media(max-width: 480px) {
+   .discount_block {
+      height: 592px;
+      width: 440px;
+   }
+
+   .discount_block > h3 {
+      width: 400px;
+      font-size: 48px;
+      line-height: 53px;
+   }
+
+   .discount_block img {
+      width: 418px;
+      height: 214px;
+      left: 3%;
+      bottom: -1%;
+   }
+   
+   .form {
+      width: 400px;
+      height: 224px;
+      position: relative;
+      left: -7%;
+      gap: 8px;
+      margin: 24px;
+   }
+
+   form > input { 
+      height: 47px;
+   }
+
+   .form button {
+      width: 400px;  
+      height: 47px; 
+   }
+}
+
+@media(max-width: 360px) {
+   .discount_block {
+      height: 592px;
+      width: 320px;
+   }
+
+   .discount_block > h3 {
+      width: 290px;
+      font-size: 40px;
+      line-height: 44px;
+      height: 88px;
+      margin: -12px;
+      margin-top: 2px;
+   }
+
+   .discount_block img {
+      width: 454px;
+      height: 232px;
+      left: -22%;
+   }
+   
+   .form {
+      width: 280px;
+      height: 224px;
+      left: -11%;
+      gap: 8px;
+      margin-top: 50px;
+   }
+
+   form > input { 
+      height: 47px;
+   }
+
+   .form button {
+      width: 280px;  
+      height: 47px; 
    }
 }
