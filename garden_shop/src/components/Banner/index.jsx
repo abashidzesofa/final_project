@@ -19,8 +19,6 @@ const banner_styles = {
       <button>Check out</button>
     </Link>
     </div>
-
-    
    </div>
   )
 }

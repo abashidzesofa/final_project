@@ -33,7 +33,9 @@ export default function ProductCard({ image, title, price, discont_price, id, co
                <div className={s.price_block}>
                <p > ${ new_price } </p>
                <p className={class_name_discount}> ${ price } </p>
-               
+{/*                
+               <p className={s.price}> ${price*count}</p>
+            <p className={s.discont_price}>${discont_price}</p> */}
                </div>
             </div>
          </div>

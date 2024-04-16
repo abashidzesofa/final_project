@@ -36,8 +36,27 @@
    height: 48px;
    margin: 16px;
    cursor: pointer;
+   position: relative;
 }
+.cart_icon div {
+   position: absolute;
+   top: 15%;
+   left: 7%;
+   background-color: #92A134;
+   border: 1px solid #92A134;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+}
+.cart_icon div > p {
+   font-family: 'Montserrat';
+   font-size: 8px;
+   font-weight: 600;
+   line-height: 7.2px;
+   color: #FFFFF1;
+   padding: 5px;
 
+}
 .cart_icon img {
    width: 48px;
    height: 48px;

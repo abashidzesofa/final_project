@@ -6,11 +6,16 @@ import { useParams } from 'react-router-dom'
 
 export default function CartPage() {
    const dispatch = useDispatch();
-   const cart_state = useSelector(store => store.cart);
-   console.log(cart_state);
-   const total_price = cart_state.reduce((acc, el) => acc + (el.price * el.count), 0)
 
-// записывает обновленное состояние в local storage
+   const cart_state = useSelector(store => store.cart);
+   // console.log(cart_state);
+
+   const total_price = cart_state.reduce((acc, el) => {
+      const price = el.discount_price ? el.discount_price : el.price;
+      return acc + (price * el.count);
+  }, 0);
+
+  
    useEffect(() => {
       localStorage.setItem('cart', JSON.stringify(cart_state))
    }, [cart_state]);

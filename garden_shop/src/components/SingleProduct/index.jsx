@@ -95,7 +95,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                      <button onClick={add_to_cart}> Add to cart </button>
                      <p style={{ color: 'red' }}>{error_message}</p>
                   </div>
-            </div>
+               </div>
             <div className={`${s.description_block} ${expanded ? s.expand : ''}`}>
                <p> Description </p>
                <p> {description} </p>
