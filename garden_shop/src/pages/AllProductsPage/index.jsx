@@ -6,6 +6,7 @@ import s from './index.module.css';
 import { Link } from 'react-router-dom';
 import { sort_products_action } from '../../store/reducers/products_reducer';
 import { get_check_products_action } from '../../store/reducers/products_reducer';
+import { check_price_action } from '../../store/reducers/products_reducer';
 
 export default function AllProductsPage() {
    
@@ -27,7 +28,19 @@ export default function AllProductsPage() {
       dispatch(sort_products_action(event.target.value));
    }
 
-      console.log(all_products_data);
+   const check = event => {
+      event.preventDefault();
+      const { min_value, max_value } = event.target;
+      const check_products = {
+         min_value: parseFloat(min_value.value) || 0,
+         max_value: parseFloat(max_value.value) || Infinity
+      }
+      dispatch(check_price_action(check_products));
+      
+      event.target.reset();
+
+   }
+
 
    return (
       <div className={[s.all_products_page, 'wrapper'].join(' ')}>
@@ -42,8 +55,14 @@ export default function AllProductsPage() {
          </section>
          <h2> All products </h2>
          <section className={s.sort_forms}>
-            <div>
-            </div>
+         <div className={s.price_filtr}>
+            <p>Price</p>
+            <form onSubmit={check} className={s.form}>
+               <input type="number" placeholder='from' name='min_value' />
+               <input type="number" placeholder='to' name='max_value' />
+               <input type='submit'/>
+            </form>
+         </div>
             <div className={s.checked}>
                <label>
                   <span>Discounted items</span>
