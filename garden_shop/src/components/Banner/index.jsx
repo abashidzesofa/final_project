@@ -11,18 +11,14 @@ const banner_styles = {
 }
 
 
-  return (
-  
-   <div className={s.banner} style={banner_styles}>
-  
-    
-    <h1>Amazing Discounts on Garden Products!</h1>
-    <Link to='/sales'>
-      <button>Check out</button>
-    </Link>
-    
-
-    
-   </div>
-  )
+return (
+  <div className={s.banner} style={banner_styles}>
+   <div className={s.title}>
+  <h1>Amazing Discounts on Garden Products!</h1>
+  <Link to='/sales'>
+    <button>Check out</button>
+  </Link>
+  </div>
+ </div>
+)
 }

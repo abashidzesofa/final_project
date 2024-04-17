@@ -123,6 +123,7 @@
     font-size: 48px;
     width: 271px;
     height: 53px;
+    margin: -2px;
   }
 
   .all_categories_div {
@@ -130,6 +131,7 @@
     line-height: 17px;
     width: 129px;
     height: 34px;
+    
   }
   
   .line {
@@ -150,7 +152,7 @@
     gap: 16px;
     margin: 24px 0;
     grid-template-columns: repeat(1, 1fr);
-    height: 630px;
+    height: 1080px;
   }
 
   .head {
@@ -162,6 +164,7 @@
     font-size: 40px;
     width: 271px;
     height: 44px;
+    margin: 0;
   }
 
   .all_categories_div {
