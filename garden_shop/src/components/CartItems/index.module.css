@@ -2,76 +2,95 @@
     display: flex;
     width: 780px;
     height: 180px;
-    border: 1px solid rgba(221, 221, 221, 1);
-    gap: 32px;
-    border-radius: 5px;
-    
+    border: 1px solid  rgba(221, 221, 221, 1);
+    border-radius: 12px;
+    /* margin-left: 32px; */
+    background-color: white;
 }
 
 .img {
-    width: 200px;
-    height: 180px;
-    border: 1px solid rgba(221, 221, 221, 1);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+  width: 200px;
+  height: 180px;  
+  border: 1px solid rgba(221, 221, 221, 1);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
-.button_block {
+.box {
+   display: flex; 
+   
+   flex-direction: column;
+   margin-left: 32px;
+}
+
+.title_block {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
-    height: 58px;
-    border: 1px, 0px,1px, 0px solid rgba(221, 221, 221, 1);
+    position: relative;
     margin-bottom: 32px;
+    margin-top: 32px;
+    font: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(66, 68, 54, 1);
+    width: 516px;
+    height: 26px;
     
 }
+.remove {
+    display: flex;
+    position: absolute;
+    margin-left: 492px;
+    cursor: pointer;
+}
 
-.button_one {
-    width: 58px;
-   height: 58px;
-   border: 1px solid #DDDDDD;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #FFFFFF;
-   color: #FFFFFF;
-   font-family: 'Montserrat';
-   font-size: 20px;
-   font-weight: 600;
-   line-height: 26px;
-    
+.buttons_block{
+    display: flex;
+    width: 516px;
+    height: 58px;
+
+}
+
+.button {
+ width: 58px;
+ height: 58px;
+ font-size: 24px;
+ color: rgba(139, 139, 139, 1);
+ border: 1px solid rgba(221, 221, 221, 1);
+ border-radius: 6px;
+ background-color: white;
 }
 
 .count {
     width: 96px;
-   height: 58px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: 'Montserrat';
-   font-size: 20px;
-   font-weight: 600;
-   line-height: 26px;
+    height: 58px; 
+    border: 1px, 0px, 1px, 0px solid rgba(221, 221, 221, 1);
+    font-size:  20px;
+    font-weight: 600;
+    text-align: center;
+    font: Monserrat;
+    border-top: 1px solid rgba(221, 221, 221, 1);
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+    color: rgba(66, 68, 54, 1);
+    padding-top: 16px;
 }
 
 .price {
-    width: 87px;
-    height: 44px;
-    font: 'Montserrat';
+    font-size:  40px;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 44px;
+    font: Monserrat;
     color: rgba(66, 68, 54, 1);
-    margin-bottom: 32px;
+    margin-left: 32px;
     
 }
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    width: 516px;
-    height: 26px;
-    gap: 16px;
-    margin-top: 32px;
-    margin-right: 32px;
+.discont_price {
+    font-size:  20px;
+    font-weight: 500;
+    font: Monserrat;
+    color: rgba(139, 139, 139, 1);
+    margin-left: 16px;
+    margin-top: 16px;
+    text-decoration: line-through;
 }
+.without_discount {
+    display: none;
+ }

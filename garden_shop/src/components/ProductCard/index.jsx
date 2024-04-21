@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 
 // написать action, который добавляет товар в корзину при клике на button_on_hover
 
-export default function ProductCard({ image, title, price, discont_price, id}) {
+export default function ProductCard({ image, title, price, discont_price, id, count}) {
 
    const class_name = discont_price === null ? s.without_sale : s.with_sale; //  для контейнера со скидкой(%)
    const class_name_discount = discont_price === null ? s.without_discount : s.with_discount; // для отображения цены (price)
@@ -18,10 +18,12 @@ export default function ProductCard({ image, title, price, discont_price, id}) {
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
 
    const dispatch=useDispatch();
+   
+   
 
-   
-   
+
    return (
+      
       <div className={s.product_card_container}>
       <Link to={`/product/${id}`}>
          <div className={s.product_by_category}>
@@ -38,9 +40,9 @@ export default function ProductCard({ image, title, price, discont_price, id}) {
                
                </div>
             </div>
-            </div>
+         </div>
       </Link>
-      <button className={s.button_on_hover} onClick={()=>dispatch(addToCartAction(image, title, price, discont_price, id))}>Add to cart</button>
+      <button onClick={()=>dispatch(addToCartAction({id, image, title, price, discont_price, count}))} className={s.button_on_hover}>Add to cart</button>
       </div>
    )
 }
