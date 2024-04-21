@@ -38,6 +38,20 @@ const checkProduct=(state, payload)=>{
   }
 }
 
+/const checkProduct=(state, payload)=>{
+    const productInState = state.find(el=>el.id===payload.id)
+    if(productInState){
+        productInState.count+=payload.count
+        return [...state]
+    }else{
+        if(payload.count !==0){
+            return [...state, payload]
+        }
+        return state
+    }
+}/
+
+
 export const cartReducer = (state = defaultState, action) => {
   if(action.type === ADD_TO_CART){
     return checkProduct(state, action.payload)
@@ -45,8 +59,9 @@ export const cartReducer = (state = defaultState, action) => {
     return state.filter( el=> el.id !==action.payload)
   }else if(action.type ===INCR_COUNT){
     const newCart = state.find(el =>el.id===action.payload)
-    newCart++
+    newCart.count++
     return [...state]
+
   }else if (action.type === DECR_COUNT){
     const newCart=state.find(el=> el.id===action.payload)
     if(newCart.count===1){

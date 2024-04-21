@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import { get_single_product } from '../../requests/products';
 import SingleProduct from '../../components/SingleProduct';
+
+
 
 export default function SingleProductPage() {
 
@@ -15,8 +17,6 @@ export default function SingleProductPage() {
    }, []);
 
    const single_product = useSelector(store => store.single_product);
-
-   console.log(single_product);
 
    return (
       <div>

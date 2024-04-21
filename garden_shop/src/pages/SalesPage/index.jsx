@@ -4,20 +4,22 @@ import { get_products } from '../../requests/products';
 import SalesCard from '../../components/SalesCard';
 import s from './index.module.css'
 import { Link } from 'react-router-dom'
-
+import { sort_products_action } from '../../store/reducers/products_reducer';
 export default function SalesPage() {
 
    const dispatch = useDispatch();
 
    
    const products_data = useSelector(store => store.products);
-   console.log(products_data);
+   // console.log(products_data);
    
    useEffect(() => {
       dispatch(get_products)
    }, []);
 
-
+   const order = event => {
+      dispatch(sort_products_action(event.target.value));
+   }
 
    return (
       <div className={[s.sales_page_container, 'wrapper'].join(' ')}>
@@ -31,7 +33,20 @@ export default function SalesPage() {
                </Link>
             </section>
             <p className={s.title}> Discounted Items </p>
-            <div className={s.sort_block}> Sort block </div>
+            <section className={s.sales_sort_forms}>
+               <div>
+
+               </div>
+            <div className={s.sorted}>
+               <span>Sorted</span>
+               <select onInput={order}>
+                  <option value="default" defaultValue>By default</option>
+                  <option value="name">By name (A-Z)</option>
+                  <option value="price_asc">By price (ASC)</option>
+                  <option value="price_desc">By price (DESC)</option>
+               </select>
+            </div>
+         </section>
          <section className={s.sales_cards_container}>
             {
                products_data
