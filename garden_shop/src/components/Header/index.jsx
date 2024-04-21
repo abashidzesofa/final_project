@@ -5,12 +5,7 @@ import logo_plant from './images/plant.png'
 import logo_ground from './images/ground.png'
 import cart_icon from './images/icon.png'
 
-// -------------
-// const burgerIcon = document.querySelector('s.burger_icon');
-// const navMenu = document.querySelector('s.nav_manu');
 
-// burgerIcon.addEventListener('click', () => navMenu.classList.toggle('active'));
-// -----------------
 export default function Header() {
    return (
       <section className={s.header}>

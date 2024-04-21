@@ -81,6 +81,10 @@
         margin-right: 40px;
         
      }
+
+     .right_card_hours > p {
+        width: 384px;
+     }
     
     .contact {
         display: grid;
@@ -152,7 +156,7 @@
     }
     
     .p {
-        width: 516px;    
+        width: 416px;    
     }
 
     .map {
@@ -215,6 +219,10 @@
         width: 90%;
         height: 100%;     
       }
+
+    .right_card_hours > p {
+        width: 154px;
+     }
 
     .map {
         width: 728px;  

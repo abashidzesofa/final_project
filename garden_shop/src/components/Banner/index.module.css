@@ -56,9 +56,10 @@
   }
 
   .banner h1 {
+    margin-bottom: 40px;
     font-size: 66px;
     width: 728px;
-    height: 248px;
+    height: 150px;
     line-height: 110%;
   }
 
