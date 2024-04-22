@@ -26,7 +26,6 @@ function App() {
         <Route path='/sales' element={ <SalesPage/> } />
         <Route path='/cart' element={ <CartPage/>} />
         <Route path='*' element={ <NotFoundPage/>} />
-
       </Routes>
       <Footer/>
     </div>

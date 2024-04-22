@@ -221,7 +221,7 @@
       line-height: 44px;
       height: 40px;
    }
-    
+   
    .price_block > p:nth-child(2) {
       font-size: 20px;
       line-height: 26px;
@@ -272,7 +272,7 @@
       height: 40px;
       margin: -10px;
    }
-    
+   
    .price_block > p:nth-child(2) {
       font-size: 18px;
       line-height: 23px;

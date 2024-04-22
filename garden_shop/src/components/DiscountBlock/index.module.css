@@ -39,18 +39,18 @@
    right: 40px;
 }
 
-form > input:focus {
+.form > input:focus {
    outline: none;
-   border-color: white;
-   background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+   border-color: rgba(0, 0, 0, 0.1);
+   border: 1px solid white;
 }
 
-form > input::placeholder {
+.form > input::placeholder {
    color: white;
    opacity: 1;
 }
 
-form > input { 
+.form > input { 
    color: white; 
    border: 1px solid white;
    border-radius: 7px;

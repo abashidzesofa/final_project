@@ -8,6 +8,5 @@ export const categories_reducer = (state = defaultState, action) => {
    if(action.type === LOAD_CATEGORIES) {
       return action.payload
    }
-   
    return state
 }

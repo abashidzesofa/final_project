@@ -61,8 +61,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 21px;
    }
- 
- }
+}
 @media(max-width: 768px) {
    .categories_page_container {
       grid-template-columns: repeat(2, 1fr);
@@ -74,8 +73,7 @@
       font-size: 56px;
       line-height: 61.6px;
 }
- 
- }
+}
 @media(max-width: 480px) {
    .categories_page_container {
       grid-template-columns: repeat(2, 1fr);
@@ -83,7 +81,6 @@
 
    .buttons {
       display: none;
-     
    }
 
    .categories_page_h2 {
@@ -92,8 +89,7 @@
       font-size: 48px;
       line-height: 52.8px;
 }
- 
- }
+}
 @media(max-width: 360px) {
    .categories_page_container {
       grid-template-columns: repeat(1, 1fr);
@@ -108,5 +104,4 @@
       font-size: 40px;
       line-height: 44px;
 }
-
- }
+}

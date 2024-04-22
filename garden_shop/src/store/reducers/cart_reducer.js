@@ -37,21 +37,6 @@ const checkProduct=(state, payload)=>{
     return [...state,{...payload, count: 1}]
   }
 }
-
-/const checkProduct=(state, payload)=>{
-    const productInState = state.find(el=>el.id===payload.id)
-    if(productInState){
-        productInState.count+=payload.count
-        return [...state]
-    }else{
-        if(payload.count !==0){
-            return [...state, payload]
-        }
-        return state
-    }
-}/
-
-
 export const cartReducer = (state = defaultState, action) => {
   if(action.type === ADD_TO_CART){
     return checkProduct(state, action.payload)

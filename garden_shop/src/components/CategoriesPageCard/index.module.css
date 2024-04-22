@@ -36,8 +36,7 @@
       height: 250px;
       gap: 20px;
    }
- 
- }
+}
 @media(max-width: 768px) {
    .categories {
       width: 306px;
@@ -49,8 +48,7 @@
       height: 250px;
       gap: 20px;
    }
- 
- }
+}
 @media(max-width: 480px) {
    .categories {
       width: 210px;
@@ -69,8 +67,7 @@
       font-size: 18px;
       line-height: 23.4px;
    }
- 
- }
+}
 @media(max-width: 360px) {
    .categories {
       width: 320px;
@@ -86,4 +83,4 @@
    .categories_title {
       width: 320px;
    }
- }
+}

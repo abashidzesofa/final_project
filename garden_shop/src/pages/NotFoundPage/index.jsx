@@ -10,7 +10,7 @@ export default function NotFoundPage() {
          <h4>Page Not Found</h4>
          <p>We’re sorry, the page you requested could not be found. Please go back to the homepage.</p>
          <Link to='/'>
-         <button> Go Home </button>
+            <button> Go Home </button>
          </Link>
       </div>
    )

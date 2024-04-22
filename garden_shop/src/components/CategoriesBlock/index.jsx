@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import s from './index.module.css'
-import { useDispatch, useSelector } from 'react-redux';
-import CategoryCard from '../CategoryCard';
-import { get_categories } from '../../requests/categories';
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux'
+import CategoryCard from '../CategoryCard'
+import { get_categories } from '../../requests/categories'
+import { Link } from 'react-router-dom'
 
 export default function CategoriesBlock() {
 
@@ -33,7 +33,6 @@ useEffect(() => {
                   
             }
          </div>
-      
       </section>
    )
 }

@@ -3,7 +3,7 @@ import s from './index.module.css'
 import { domen } from '../../requests/categories'
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
-import { add_to_cart_action } from '../../store/reducers/cart_reducer';
+import { addToCartAction } from '../../store/reducers/cart_reducer';
 
 export default function SalesCard({ image, title, discont_price, price, id, count }) {
 
@@ -33,7 +33,7 @@ export default function SalesCard({ image, title, discont_price, price, id, coun
             </div>
          </div>
       </Link>
-      <button className={s.button_on_hover} onClick={() => dispatch(add_to_cart_action({id, image, title, price, discont_price, count}))}>Add to cart</button>
+      <button className={s.button_on_hover} onClick={() => dispatch(addToCartAction({id, image, title, price, discont_price, count}))}>Add to cart</button>
       </div>
    )
 }

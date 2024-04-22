@@ -1,7 +1,7 @@
 import React from 'react'
 import { domen } from '../../requests/categories'
 import s from './index.module.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 
 

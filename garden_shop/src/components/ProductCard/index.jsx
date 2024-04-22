@@ -28,11 +28,12 @@ export default function ProductCard({ image, title, price, discont_price, id, co
                <div className={s.price_block}>
                <p > ${ new_price } </p>
                <p className={class_name_discount}> ${ price } </p>
-            </div>
+               
+               </div>
             </div>
             </div>
       </Link>
-      <button className={s.button_on_hover} onClick={() => dispatch(add_to_cart_action({id, image, title, count, price, discont_price}))}>Add to cart</button>
+      <button className={s.button_on_hover} onClick={() => dispatch(addToCartAction({id, image, title, count, price, discont_price}))}>Add to cart</button>
       </div>
 
    )

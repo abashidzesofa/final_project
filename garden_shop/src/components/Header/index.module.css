@@ -40,6 +40,27 @@
    height: 48px;
    margin: 40px;
    cursor: pointer;
+   position: relative;
+}
+
+.cart_icon div {
+   position: absolute;
+   top: 15%;
+   left: 7%;
+   background-color: #92A134;
+   border: 1px solid #92A134;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+}
+
+.cart_icon div > p {
+   font-family: 'Montserrat';
+   font-size: 8px;
+   font-weight: 600;
+   line-height: 7.2px;
+   color: #FFFFF1;
+   padding: 5px;
 }
 
 .cart_icon img {
@@ -50,8 +71,6 @@
 
 }
 
-
-     
 .burger_icon {
    position: relative;
    z-index: 50;
@@ -62,6 +81,7 @@
    display: none;
    cursor: pointer;
 }
+
 .burger_icon span{
    height: 3px;
    width: 32px;
@@ -78,10 +98,10 @@
    position: flex;
    transition: all 0.3s ease 0s;
 }
-    
-.burger_icon::before { top: 0}
-.burger_icon::after { bottom: 0}
 
+.burger_icon::before { top: 0}
+
+.burger_icon::after { bottom: 0}
 
 .burger_icon.active span { transform: scale(0)}
 
@@ -89,12 +109,11 @@
    top: 50%;
    transform: rotate(-45deg) translate(0, -50%);
 }
+
 .burger_icon.active::after{
    top: 50%;
    transform: rotate(45deg) translate(0, 50%);
 }
-
-              
 
 .nav_menu {
    display: flex;
@@ -113,118 +132,113 @@
 }
 
 @media(max-width: 1000px) {   
-   .nav_menu {
-      width: 1000px;
-      position: absolute;
-      padding: 0 240px;
+.nav_menu {
+   width: 1000px;
+   position: absolute;
+   padding: 0 240px;
    }
- 
-   .logo_container {
+
+.logo_container {
    margin-left: 20px;
    }
    
-   .cart_icon {
-     margin: 20px;
+.cart_icon {
+   margin: 20px;
    }
- }
+}
 
- @media(max-width: 768px) {   
-   .header {
-     height: 110px;
-     width: 768px;
+@media(max-width: 768px) {   
+.header {
+   height: 110px;
+   width: 768px;
    }
 
-   .nav_menu {
-      margin-top: 0;
-      gap: 20px;
-      padding: 44px 143px 40px 143px;   
-      width: 769px; 
+.nav_menu {
+   margin-top: 0;
+   gap: 20px;
+   padding: 44px 143px 40px 143px;   
+   width: 769px; 
    }  
+}
 
- }
-
- @media(max-width: 480px) {   
-   .header {
-      width: 480px;
-      height: 68px;
-      position: relative;  
+@media(max-width: 480px) {   
+.header {
+   width: 480px;
+   height: 68px;
+   position: relative;  
    }
 
-   .logo_container {
-      width: 44px;
-      height: 44px;
+.logo_container {
+   width: 44px;
+   height: 44px;
    }
 
-   .logo_container img:first-child {
-      width: 22px;
-      height: 22px;
+.logo_container img:first-child {
+   width: 22px;
+   height: 22px;
    }
 
-   .logo_container img:last-child {
-      width: 23px;
-      height: 11px;
-      position: absolute;
-      top: 35px;
+.logo_container img:last-child {
+   width: 23px;
+   height: 11px;
+   position: absolute;
+   top: 35px;
    }
    
-   .cart_icon {
-      position: flex;
-      margin-right: -50px;  
-      width: 32px;
-      height: 32px;
-    }
-   .cart_icon img {
-      width: 32px;
-      height: 32px;
-      margin-left: 120px;
+.cart_icon {
+   position: flex;
+   margin-right: -50px;  
+   width: 32px;
+   height: 32px;
+   }
+.cart_icon img {
+   width: 32px;
+   height: 32px;
+   margin-left: 120px;
    }
 
 
       
-   .nav_menu  {
-      display: none;     
-      
-      flex-direction: column;
-      top: 100%;
-      right: -20px;
-      width: 282px;
-      height: 1067px;
-      background-color: #FFFFF1; 
+.nav_menu  {
+   display: none;     
+   flex-direction: column;
+   top: 100%;
+   right: -20px;
+   width: 282px;
+   height: 1067px;
+   background-color: #FFFFF1; 
    }  
-       
-      
-   .burger_icon {
-      display: flex;
-      width: 32px;
-      height: 22px;
-      margin: 20px;
-      
- }
-}  
- @media(max-width: 360px) {   
-   .header {
-     height: 68px;
-     width: 360px;
+
+.burger_icon {
+   display: flex;
+   width: 32px;
+   height: 22px;
+   margin: 20px;
+   }
+}
+
+@media(max-width: 360px) {   
+.header {
+   height: 68px;
+   width: 360px;
    }
 
-   .logo_container {
-      width: 44px;
-      height: 44px;
+.logo_container {
+   width: 44px;
+   height: 44px;
    }
 
-   .cart_icon {
-      margin: 16px 84px 20px 0;
-      width: 32px;
-      height: 32px;
-      margin-right: 0;
-    }
-   .cart_icon img {
-      margin-left: 96px;
+.cart_icon {
+   margin: 16px 84px 20px 0;
+   width: 32px;
+   height: 32px;
+   margin-right: 0;
    }
-      
+.cart_icon img {
+   margin-left: 96px;
+   }
 
-   .burger_icon {
-      margin: 20px;
+.burger_icon {
+   margin: 20px;
    }
-   
- }
+}

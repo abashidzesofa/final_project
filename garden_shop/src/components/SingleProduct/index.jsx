@@ -4,7 +4,6 @@ import { get_categories } from '../../requests/categories';
 import { Link } from 'react-router-dom';
 import s from './index.module.css'
 import { domen } from '../../requests/categories';
-import { add_single_to_cart_action } from '../../store/reducers/cart_reducer';
 export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description }) {
 
    const dispatch = useDispatch();
@@ -25,7 +24,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
          setErrorMessage("Please select quantity");
          return;
       }
-      dispatch(add_single_to_cart_action({id, image, title, price, discont_price, count}))
+      // dispatch(add_single_to_cart_action({id, image, title, price, discont_price, count}))
       setErrorMessage('');
       setCount(0);
    };
@@ -95,7 +94,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                      <button onClick={add_to_cart}> Add to cart </button>
                      <p style={{ color: 'red' }}>{error_message}</p>
                   </div>
-            </div>
+               </div>
             <div className={`${s.description_block} ${expanded ? s.expand : ''}`}>
                <p> Description </p>
                <p> {description} </p>

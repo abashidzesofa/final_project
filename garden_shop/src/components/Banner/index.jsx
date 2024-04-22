@@ -7,18 +7,18 @@ export default function Banner() {
 
 
 const banner_styles = {
-   backgroundImage: `url('${banner_img}')`
+  backgroundImage: `url('${banner_img}')`
 }
 
 
-return (
-  <div className={s.banner} style={banner_styles}>
-   <div className={s.title}>
-  <h1>Amazing Discounts on Garden Products!</h1>
-  <Link to='/sales'>
-    <button>Check out</button>
-  </Link>
-  </div>
- </div>
-)
+  return (
+    <div className={s.banner} style={banner_styles}>
+      <div className={s.title}>
+        <h1>Amazing Discounts on Garden Products!</h1>
+        <Link to='/sales'>
+          <button>Check out</button>
+        </Link>
+      </div>
+    </div>
+  )
 }

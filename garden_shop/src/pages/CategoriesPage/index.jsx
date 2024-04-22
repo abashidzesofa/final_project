@@ -34,15 +34,11 @@ export default function CategoriesPage() {
          </section>
          <section className={s.categories}>
             <h2 className={s.categories_page_h2}> Categories </h2>
-            
             <div className={s.categories_page_container}>
                {
                   categories_data.map(el => <CategoriesPageCard key={el.id} {...el} />)
                }
-               
             </div>
-
-            
          </section>
       </div>
    )

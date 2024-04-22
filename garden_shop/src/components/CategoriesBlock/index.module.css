@@ -133,7 +133,7 @@
     height: 34px;
     
   }
-  
+
   .line {
     width: 24px; 
     right: 128px;
@@ -157,7 +157,6 @@
 
   .head {
     height: 44px; 
-
   }
   
 .h2 {
@@ -175,12 +174,11 @@
     height: 42px;
     padding-bottom: 0;
     left: 27%;
-   top: 1160px
+    top: 1160px
 
   }
   
   .line {
     display: none;
   }
-
 }

@@ -69,7 +69,6 @@ h4 {
    .sales_line {
       width: 691px;   
    }
-    
 }
 
 @media(max-width: 768px) {
@@ -94,15 +93,14 @@ h4 {
       width: 123px;
       height: 62px; 
    }
-    
+
    .sales_head {
-    height: 62px;
+   height: 62px;
    }
 
    .sales_line {
       width: 488px;   
    }
-    
 }
 
 @media(max-width: 480px) {
@@ -125,16 +123,16 @@ h4 {
       height: 53px; 
       margin: 5px;
    }
-    
+
    .sales_head {
-    height: 62px;
+   height: 62px;
    }
 
    .sales_line {
       width: 230px;  
       right: 90px;
    }
-    
+
    .all_sales_div {
       font-size: 14px;
       line-height: 18px;
@@ -163,15 +161,15 @@ h4 {
       width: 105px;
       height: 44px; 
    }
-    
+
    .sales_head {
-    height: 44px;
+   height: 44px;
    }
 
    .sales_line {
-    display: none;
+   display: none;
    }
-    
+
    .all_sales_div {
       font-size: 14px;
       line-height: 18px;
