@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import s from './index.module.css'
 import { domen } from '../../requests/categories';
 import { add_single_to_cart_action } from '../../store/reducers/cart_reducer';
+
 export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description }) {
 
    const dispatch = useDispatch();
@@ -29,6 +30,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
       setErrorMessage('');
       setCount(0);
    };
+
    
    useEffect(() => {
       dispatch(get_categories)
@@ -48,6 +50,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
 
 
+
    const [expanded, setExpanded] = useState(false);
 
    const toggleExpand = () => {
@@ -55,8 +58,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
    };
 
 
-   
-   
+ 
    return (
       <div className='wrapper'>
          <section className={s.buttons}>
