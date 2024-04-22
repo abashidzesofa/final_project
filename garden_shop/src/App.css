@@ -4,7 +4,52 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #FFFFF1;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #424436
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.wrapper {
+  width: 1360px;
+  margin: 40px auto;
+}
+
+@media(max-width: 1000px) {   
+
+  .wrapper {
+    width: 960px;
+    margin: 20px auto;
+  } 
+}
+@media(max-width: 768px) {   
+
+  .wrapper {
+    width: 728px;
+    margin: 20px auto;
+  }
+ 
+}
+@media(max-width: 480px) {   
+
+  .wrapper {
+    width: 440px;
+    margin: 20px auto;
+  }
+}
+@media(max-width: 360px) {   
+
+  .wrapper {
+    width: 320px;
+    margin: 20px auto;
+  }
 }

@@ -1,0 +1,251 @@
+.buttons {
+   position: relative;
+   display: flex;
+   width: 254px;
+   height: 36px;
+   gap: 15px;
+   margin: 40px 0;
+}
+
+.main_page_button, .categories_button, .category_title_button {
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   height: 36px;
+   width: 125px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   color: #8B8B8B;
+}
+
+.title_button {
+   color: #424436;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   height: 36px;
+   width: auto;
+   cursor: pointer;
+   padding: 8px 16px;
+}
+
+.buttons_line {
+   width: 16px;
+   border-bottom: 1px solid #DDDDDD;
+   position: absolute;
+   top: 17px;
+   left: 125px;
+}
+.buttons_line_two {
+   width: 16px;
+   border-bottom: 1px solid #DDDDDD;
+   position: absolute;
+   top: 17px;
+   left: 265px;
+}
+.buttons_line_three {
+   width: 16px;
+   border-bottom: 1px solid #DDDDDD;
+   position: absolute;
+   top: 17px;
+   left: 405px;
+}
+
+.single_card {
+   display: flex;
+   gap: 32px;
+}
+
+
+.single_card img {
+   width: 780px;
+   height: 572px;
+   border-bottom: 1px solid #DDDDDD;
+   border-top: 1px solid #DDDDDD;
+   border-radius: 15px;
+   object-fit:cover;
+   cursor: pointer;
+}
+
+.about_block > p {
+   width: 548px;
+   height: 44px;
+   font-family: 'Montserrat';
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 44px;
+   letter-spacing: 0.03em;
+   text-align: left;
+   color: #424436;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.price_block {
+   display: flex;
+   position: relative;
+   margin: 32px auto;
+}
+
+.price_block p:first-child {
+   width: auto;
+   height: 70px;
+   font-family: 'Montserrat';
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 70.4px;
+   color: #282828;
+}
+
+.price_block p:nth-child(2) {
+   font-family: 'Montserrat';
+   font-size: 40px;
+   font-weight: 500;
+   line-height: 52px;
+   width: 101px;
+   height: 52px;
+   color: #8B8B8B;
+   text-decoration: line-through;
+   position: absolute;
+   top: 25%;
+   left: 35%;
+}
+
+.with_sale {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 4px 8px;
+   border-radius: 7px;
+   border: 1px solid #F26D22;
+   background-color: #F26D22;
+   color: #FFFFFF;
+   position: absolute;
+   right: 30%;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   letter-spacing: 0.03em;
+}
+
+.without_sale {
+   display: none;
+} 
+
+.without_discount {
+   display: none;
+}
+
+.cart_block {
+   display: flex;
+   gap: 32px;
+}
+.count_block {
+   display: flex;
+   width: 200px;
+   height: 58px;
+   border: 1px solid #DDDDDD;
+   background-color: #FFFFFF;
+   border-radius: 11px;
+}
+.count_block  button {
+   width: 58px;
+   height: 58px;
+   border: 1px solid #DDDDDD;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #DDDDDD;
+   background-color: #FFFFFF;
+   border-radius: 11px;
+   color: #8B8B8B;
+}
+.count_block p {
+   width: 96px;
+   height: 58px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+}
+
+.add_to_cart button {
+   width: 316px;
+   height: 58px;
+   padding: 16px 32px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   background-color: #92A134;
+   border: 1px solid #92A134;
+   border-radius: 10px;
+   color: #FFFFFF;
+}
+
+.description_block  {
+   margin: 32px auto;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.description_block.expand {
+   white-space: normal;
+   overflow: visible;
+   text-overflow: clip;
+}
+
+.description_block p:first-child {
+   width: 548px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   color: #424436;
+}
+
+.description_block p:nth-child(2) {
+   width: 548px;
+   height: 227px;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20.8px;
+   color: #282828;
+   margin: 16px auto;
+   overflow: hidden; 
+   text-overflow: ellipsis;
+}
+
+.description_block p:last-child {
+   width: 548px;
+   height: 21px;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.8px;
+   color: #424436;
+   cursor: pointer;
+}
+
+.description_block p:last-child:hover {
+   text-decoration: underline;
+}

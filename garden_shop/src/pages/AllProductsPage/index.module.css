@@ -1,0 +1,262 @@
+.cards_container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 32px;
+}
+
+.buttons {
+   position: relative;
+   display: flex;
+   width: 254px;
+   height: 36px;
+   gap: 15px;
+   margin: 40px 0;
+}
+
+.main_page_button, .all_products_button {
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   height: 36px;
+   width: 125px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.main_page_button {
+   color: #8B8B8B;
+}
+
+.all_products_button {
+   color: #424436;
+}
+
+.buttons_line {
+   width: 16px;
+   border-bottom: 1px solid #DDDDDD;
+   position: absolute;
+   top: 17px;
+   left: 125px;
+}
+
+.all_products_page h2 {
+   font-family: 'Montserrat';
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 70.4px;
+   text-align: left;
+   color: #424436;
+   width: 1360px;
+   height: 70px;
+   margin-bottom: 40px;
+}
+
+
+.sort_forms {
+   width: 908px;
+   height: 36px;
+   display: flex;
+   margin-bottom: 40px;
+   gap: 40px;
+}
+.price_filtr {
+   display: flex;
+   gap: 16px;
+}
+
+.price_filtr p {
+   width: 53px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   text-align: left;
+   color: #424436;
+   align-self: center;
+}
+.form {
+   display: flex;
+   gap: 16px;
+}
+
+.form input {
+   width: 112px;
+   height: 36px;
+   padding: 8px 16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   background-color: #FFFFFF;
+
+}
+
+.form input:last-child {
+   display: none;
+}
+
+
+.checked label {
+   display: flex;
+   gap: 16px;
+   width: 234px;
+   height: 36px;
+}
+.checked label > span {
+   width: 182px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   align-self: center;
+   color: #424436;
+   white-space: nowrap; 
+}
+
+.checked label > input {
+   width: 36px;
+   height: 36px;
+   border: 1px solid #DDDDDD;
+   border-radius: 10px;
+   background-color: #FFFFFF;
+}
+
+.sorted {
+   width: 285px;
+   height: 36px;
+   display: flex;
+}
+
+.sorted > span {
+   width: 69px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   text-align: center;
+   color: #424436;
+   margin-right: 16px;
+   padding-top: 6px;
+}
+
+.sorted > select {
+   width: 200px;
+   height: 36px;
+   padding: 8px 8px 8px 16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   align-self: center;
+   background-color: #FFFFFF;
+   color: #424436;
+}
+
+.sorted > select option {
+   width: 148px;
+   height: 20px;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.16px;
+   text-align: left;
+}
+
+
+@media(max-width: 1000px) {
+   .cards_container {
+      width: 960px;
+      gap: 20px;
+   }
+
+   .all_products_page h2 {
+      width: 960px;
+      margin-bottom: 32px;
+   }
+
+   
+
+}
+@media(max-width: 768px) {
+   .cards_container {
+      width: 728px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 0px;
+   }
+
+   .all_products_page h2 {
+      width: 728px;
+      height: 62px;
+      font-size: 56px;
+      line-height: 61.6px;
+   }
+
+   .sort_forms {
+      width: 728px;
+      height: 36px;
+      display: flex;
+      margin-bottom: 40px;
+      gap: 0;
+   }
+
+   .sorted {
+      margin-left: 32px;
+   }
+
+}
+@media(max-width: 480px) {
+   .cards_container {
+      width: 440px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 20px;
+   }
+
+   .all_products_page h2 {
+      width: 440px;
+      height: 53px;
+      font-size: 48px;
+      line-height: 52.8px;
+      margin-top: -90px;
+      margin-bottom: 4px;
+   }
+
+   .main_page_button {
+      display: none;
+   }
+   
+   .all_products_button {
+      display: none;
+   }
+
+   .sort_forms {
+      width: 440px;
+      height: 138px;
+      flex-direction: column;
+      margin-bottom: -10px;
+      gap: 16px;
+   }
+
+   .buttons_line {
+      display: none;
+   }
+}
+
+@media(max-width: 360px) {
+   .cards_container {
+      width: 320px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+   }
+
+   .all_products_page h2 {
+      width: 320px;
+   }
+
+   .sort_forms {
+      width: 320px;
+   }
+}

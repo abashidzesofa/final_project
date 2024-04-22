@@ -1,0 +1,196 @@
+.sales_cards_container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 32px;
+}
+
+.buttons {
+   position: relative;
+   display: flex;
+   width: 475px;
+   height: 36px;
+   gap: 15px;
+   margin: 40px 0;
+}  
+
+.buttons div:nth-child(odd) {
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   height: 36px;
+   width: 125px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.main_page_button {
+   color: #8B8B8B;
+}
+
+.all_sales_button {
+   color: #424436;
+}
+
+.buttons_line {
+   width: 16px;
+   border-bottom: 1px solid #DDDDDD;
+   position: absolute;
+   top: 17px;
+   left: 125px;
+}
+
+.title {
+   width: 1360px;
+   height: 70px;
+   font-family: 'Montserrat';
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 70.4px;
+   text-align: left;
+   color: #424436;
+   margin-bottom: 40px;
+}
+
+.sales_sort_forms {
+   margin-bottom: 40px;
+   width: 285px;
+   height: 36px;
+   display: flex;
+   gap: 40px;
+}
+
+.price_filtr {
+   display: flex;
+   gap: 16px;
+}
+
+.price_filtr p {
+   width: 53px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   text-align: left;
+   color: #424436;
+   align-self: center;
+}
+.form {
+   display: flex;
+   gap: 16px;
+}
+
+.form input {
+   width: 112px;
+   height: 36px;
+   padding: 8px 16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   background-color: #FFFFFF;
+
+}
+
+.form input:last-child {
+   display: none;
+}
+
+.sorted {
+   width: 285px;
+   height: 36px;
+   display: flex;
+}
+
+.sorted > span {
+   width: 69px;
+   height: 26px;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 26px;
+   text-align: center;
+   color: #424436;
+   margin-right: 16px;
+   padding-top: 6px;
+}
+
+.sorted > select {
+   width: 200px;
+   height: 36px;
+   padding: 8px 8px 8px 16px;
+   border: 1px solid #DDDDDD;
+   border-radius: 7px;
+   align-self: center;
+   background-color: #FFFFFF;
+   color: #424436;
+}
+
+.sorted > select option {
+   width: 148px;
+   height: 20px;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20.16px;
+   text-align: left;
+}
+
+@media(max-width: 1000px) {
+   .sales_cards_container {
+      gap: 20px;
+   }
+   
+   .title {
+      width: 960px;
+      margin-bottom: 32px;
+   } 
+}
+
+@media(max-width: 768px) {
+   .sales_cards_container {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 60px;
+   }
+   
+   .title {
+      width: 728px;
+      height: 62px;
+      font-size: 56px;
+      line-height: 61.6px;
+   } 
+
+}
+
+@media(max-width: 480px) {
+   .sales_cards_container {
+      gap: 20px;
+   }
+   
+   .title {
+      width: 440px;
+      height: 106px;
+      font-size: 48px;
+      line-height: 52.8px;
+   } 
+
+   .buttons {
+      display: none;
+   }  
+}
+
+@media(max-width: 360px) {
+   .sales_cards_container {
+      grid-template-columns: repeat(1, 1fr);
+      /* gap: 20px; */
+   }
+   
+   .title {
+      width: 320px;
+      height: 88px;
+      margin-bottom: 24px;
+   } 
+}
