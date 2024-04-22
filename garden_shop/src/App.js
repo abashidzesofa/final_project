@@ -10,15 +10,10 @@ import SingleProductPage from './pages/SingleProductPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFoundPage';
-import ModalWindow from './components/ModalWindow';
-import { useState } from 'react'
+
 
 function App() {
 
-
-  const [modalActive, setModalActive] = useState(false);
-  const open_modal = () => setModalActive(true);
-  const close_modal =() => setModalActive(false)
   return (
     <div>
       <Header/>
@@ -32,7 +27,6 @@ function App() {
         <Route path='/cart' element={ <CartPage/>} />
         <Route path='*' element={ <NotFoundPage/>} />
       </Routes>
-      {/* <ModalWindow /> */}
       <Footer/>
     </div>
   );
