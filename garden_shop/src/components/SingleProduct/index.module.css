@@ -193,6 +193,8 @@
    line-height: 26px;
    background-color: #92A134;
    color: #FFFFFF;
+   border: none;
+   border-radius: 10px;
 }
 
 .description_block  {
@@ -244,4 +246,381 @@
 
 .description_block p:last-child:hover {
    text-decoration: underline;
+}
+
+
+@media(max-width: 1000px) {
+   .single_card img {
+      width: 470px;
+   }
+
+   .add_to_cart button {
+      width: 275px;
+      height: 58px;
+   }
+
+   .about_block > p {
+      width: 470px;
+   }
+
+   .cart_block {
+      gap: 20px;
+   }
+
+   .description_block p:nth-child(2) {
+      width: 470px;
+      height: 227px;
+      margin-left: 0;
+   }
+
+   .price_block {
+      width: 347px;
+      margin-left: 0;
+   }
+
+   .about_block  {
+      width: 470px;
+      height: 574px;
+      margin-left: -10px;
+   }
+
+   .price_block p:nth-child(2) {
+      left: 50%;
+   }
+
+   .count_block {
+      width: 175px; 
+      margin-bottom: 0px;
+   }
+
+   .with_sale {
+      right: 0;
+   }
+   
+   .description_block p:first-child {
+      width: 470px;
+   }
+
+   .description_block p:last-child {
+      width: 470px;
+   }
+}
+
+@media(max-width: 768px) {
+   .single_card img {
+      width: 354px;
+      height: 273px;
+   }
+   .add_to_cart button {
+      width: 354px;
+   }
+
+   .about_block > p {
+      width: 354px;
+      height: 35px;
+      font-size: 32px;
+      line-height: 35.2px;
+   }
+
+   .cart_block {
+      flex-direction: column;
+      margin-top: -20px;
+      height: 136px;
+   }
+
+   .price_block p:first-child {
+      height: 62px;
+      width: 180px;
+      font-size: 56px;
+      line-height: 61.6px;
+      margin-top: 0;
+   } 
+
+   .description_block  {
+      margin: 0 0;
+      white-space: wrap;
+      width: 728px;
+      height: 191px;
+      margin-left: -370px;
+      margin-bottom: 0;
+   }
+
+   .description_block p:nth-child(2) {
+      width: 728px;
+      height: 110px;
+   }
+
+   .price_block {
+      width: 330px;
+      height: 62px;
+      margin-left: 0;
+      margin-top: -25px;
+      margin-bottom: 0;
+   }
+
+   .about_block  {
+      width: 354px;
+      height: 574px;
+      margin-left: 0px;
+      display: grid;
+   }
+
+   .price_block p:nth-child(2) {
+      left: 55%;
+      height: 42px;
+      margin-top: -5px;
+      font-size: 32px;
+   }
+
+   .count_block {
+      width: 200px;
+      margin-top: -15px; 
+   }
+
+   .with_sale {
+      right: 0;
+      height: 26px;
+      width: 47px;
+   }
+
+    .single_card {
+      gap: 20px;
+   } 
+}
+
+
+@media(max-width: 480px) {
+   .single_card img {
+      width: 210px;
+      height: 179px;
+      margin-top: 50px;
+   }
+
+   .buttons {
+     display: none;
+   }
+
+   .add_to_cart button {
+      width: 210px;
+      height: 47px;
+      padding: 0;
+      margin-bottom: 0;
+   }
+
+   .about_block > p {
+      width: 440px;
+      height: 31px;
+      font-size: 28px;
+      line-height: 30.8px;
+      margin-top: 0px;
+      margin-left: -230px;
+   }
+
+   .cart_block {
+      margin-bottom: -20px;
+      height: 179px;
+      
+   }
+
+   .price_block p:first-child {
+      width: 130px;
+      height: 48px;
+      font-size: 48px;
+      line-height: 52.8px;
+      margin-top: 0px;
+   } 
+
+   .description_block  {
+      white-space: wrap;
+      width: 440px;
+      height: 175px;
+      margin-left: -230px;
+      margin-bottom: 0px;
+   }
+
+   .description_block p:nth-child(2) {
+      width: 440px;
+      height: 110px;
+      font-size: 14px;
+      line-height: 18.2px;
+      margin: 12px 0;
+   }
+
+   .price_block {
+      width: 210px;
+      height: 53px;
+      margin-left: 0;
+      margin-top: 25px;
+      margin-bottom: 0px;
+   }
+
+   .about_block  {
+      width: 210px;
+      height: 179px;
+      margin-left: 0px;
+   }
+
+   .price_block p:nth-child(2) {
+      left: 60%;
+      width: 80px;
+      height: 36px;
+      margin-top: 0;
+      font-size: 28px;
+      line-height: 36.4px;
+   }
+
+   .count_block {
+      width: 164px;
+      height: 47px;
+      margin-top: 25px; 
+   }
+
+   .count_block p {
+      height: 47px;
+   }
+
+   .count_block  button {
+      width: 58px;
+      height: 47px;
+   }
+
+   .with_sale {
+      left: -90px;
+      height: 31px;
+      width: 58px;
+   }
+   
+   .description_block p:first-child {
+      width: 440px;
+      height: 23px;
+      font-size: 18px;
+   }
+
+   .description_block p:last-child {
+      width: 440px;
+      height: 18px;
+      font-size: 14px;
+      line-height: 18.2px;
+   }
+    
+   .single_card {
+      width: 440px;
+      height: 425px;
+      gap: 20px;
+   } 
+}
+
+@media(max-width: 360px) {
+   .single_card img {
+      width: 320px;
+      height: 220px;
+      margin-top: 50px;
+   }
+
+   .add_to_cart button {
+      width: 320px;
+      height: 47px;
+      padding: 0;
+      margin-bottom: 0;
+   }
+
+   .about_block > p {
+      width: 320px;
+      position: relative;
+      margin-top: -428px;
+      margin-left: 0;
+   }
+
+   .cart_block {
+      margin-bottom: -10px;
+      height: 162px;
+      
+   }
+
+   .price_block p:first-child {
+      width: 130px;
+      height: 48px;
+      font-size: 48px;
+      line-height: 52.8px;
+      margin-top: 0px;
+   } 
+
+   .description_block  {
+      white-space: wrap;
+      width: 320px;
+      height: 245px;
+      margin-left: 0px;
+      margin-top: -74px;
+   }
+
+   .description_block p:nth-child(2) {
+      width: 320px;
+      height: 110px;
+      font-size: 14px;
+      line-height: 18.2px;
+      margin: 12px 0;
+   }
+
+   .price_block {
+      width: 320px;
+      height: 53px;
+      margin-left: 0;
+      margin-top: -130px;
+      margin-bottom: 0px;
+   }
+
+   .about_block  {
+      width: 320px;
+      height: 162px;
+      margin-top: 20px;
+   }
+
+   .price_block p:nth-child(2) {
+      left: 60%;
+      width: 80px;
+      height: 36px;
+      margin-top: 0;
+      font-size: 28px;
+      line-height: 36.4px;
+   }
+
+   .count_block {
+      margin-top: -45px; 
+      margin-left: 70px;
+      margin-bottom: -1px;
+   }
+
+   .count_block p {
+      height: 47px;
+   }
+
+   .count_block  button {
+      width: 58px;
+      height: 47px;
+   }
+
+   .with_sale {
+      left: 240px;
+      bottom: 260px;
+   }
+   
+   .description_block p:first-child {
+      width: 320px;
+      height: 23px;
+      font-size: 18px;
+   }
+
+   .description_block p:last-child {
+      width: 320px;
+      height: 18px;
+      font-size: 14px;
+      line-height: 18.2px;
+   }
+    
+   .single_card {
+      width: 320px;
+      height: 718px;
+      gap: 20px;
+      display: grid;
+   } 
 }
