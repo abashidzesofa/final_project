@@ -5,6 +5,7 @@ import logo_plant from './images/plant.png'
 import logo_ground from './images/ground.png'
 import cart_icon from './images/icon.png'
 import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 
 export default function Header() {

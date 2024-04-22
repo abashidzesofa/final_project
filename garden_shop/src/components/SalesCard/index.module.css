@@ -49,7 +49,6 @@
    letter-spacing: 0.03em;
 
 }
-
 .description_block {
    margin-top: 20px;
 }
@@ -117,6 +116,7 @@
 
 .sales_card_container:hover .button_on_hover {
    display: block;
+
 }
 
 @media(max-width: 1000px) {
@@ -280,4 +280,5 @@
       left: 120px;
       text-decoration: line-through;
    } 
+
 }
