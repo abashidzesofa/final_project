@@ -23,3 +23,33 @@ a {
   width: 1360px;
   margin: 40px auto;
 }
+
+@media(max-width: 1000px) {   
+
+  .wrapper {
+    width: 960px;
+    margin: 20px auto;
+  } 
+}
+@media(max-width: 768px) {   
+
+  .wrapper {
+    width: 728px;
+    margin: 20px auto;
+  }
+ 
+}
+@media(max-width: 480px) {   
+
+  .wrapper {
+    width: 440px;
+    margin: 20px auto;
+  }
+}
+@media(max-width: 360px) {   
+
+  .wrapper {
+    width: 320px;
+    margin: 20px auto;
+  }
+}

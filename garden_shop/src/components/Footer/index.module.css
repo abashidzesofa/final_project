@@ -11,17 +11,15 @@
     gap: 32px;
     margin: 40px;
     
-    
     }
     
     .link_card_phone {
-        width: 780px;
-        height: 150px;
-        padding: 32px;
-        
-        background-color: rgba(242, 246, 211, 1);
-        border-radius: 12px;
-        margin-left: 40px;
+    width: 780px;
+    height: 150px;
+    padding: 32px;
+    background-color: rgba(242, 246, 211, 1);
+    border-radius: 12px;
+    margin-left: 40px;
         
     }
     
@@ -63,8 +61,8 @@
     }
     
     .right_card_socials {
-       width: 548px;
-       height: 150px;
+        width: 548px;
+        height: 150px;
         padding: 32px;
        
         background-color: rgba(242, 246, 211, 1);
@@ -77,13 +75,15 @@
     .right_card_hours {
         width: 548px;
         height: 194px;
-         padding: 32px;
+        padding: 32px;
+        background-color: rgba(242, 246, 211, 1);
+        border-radius: 12px;
+        margin-right: 40px;
         
-         background-color: rgba(242, 246, 211, 1);
-         border-radius: 12px;
-         margin-right: 40px;
-        
-     
+     }
+
+     .right_card_hours > p {
+        width: 384px;
      }
     
     .contact {
@@ -104,23 +104,279 @@
         flex-direction: column;
     }
     
-
     .map {
         width: 1360px;
         height: 350px;
         border-radius: 10px;
         margin-left: 40px;
-        border: 0;
     }
 
+    
+@media(max-width: 1000px) {
+    
+    .section {
+        gap: 20px;
+        height: 840px;
+        width: 960px;  
+    }
+    
+    .h2 {
+        width: 960px;
+        margin: 0;  
+    } 
+
+    .link_card_phone {
+        width: 470px;
+        height: 150px;
+        margin-left: 0;   
+    }
+    
+    .link_card_adress {
+        width: 470px;
+        height: 238px;
+        margin-left: 0;
+    }
+
+    .right_card_socials {
+        width: 470px;
+        height: 150px;
+        margin-right: 0;
+     }
+     
+     .right_card_hours {
+        width: 470px;
+        height: 238px;
+        margin-right: 0; 
+      }
+
+    .contact {
+        gap: 20px;
+        width: 960px;
+        height: 408px;    
+    }
+    
+    .p {
+        width: 416px;    
+    }
+
+    .map {
+        width: 960px;
+        height: 250px;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    
+    .section {
+        height: 832px;
+        width: 728px;
+    }
+    
+    .h2 {
+        width: 728px;
+        height: 62px;
+        font-size: 56px;  
+        line-height: 61px;
+    } 
+
+    .link_card_phone {
+        width: 479px;
+        height: 150px;
+        margin-left: 0;
+        
+    }
+    
+    .link_card_adress {
+        width: 479px;
+        height: 238px;
+        margin-left: 0;
+    }
+
+    .right_card_socials {
+        width: 229px;
+        height: 150px;
+        margin-right: 0;
+     }
+     
+     .right_card_hours {
+        width: 229px;
+        height: 238px;
+        margin-right: 0; 
+      }
+ 
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 728px;
+        height: 408px;    
+    } 
+
+    .right_card_hours > .p{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;     
+      }
+
+    .right_card_hours > p {
+        width: 154px;
+     }
+
+    .map {
+        width: 728px;  
+    }
+}
+
+
+@media(max-width: 480px) {
+    
+    .section {
+        height: 896px;
+        width: 440px;
+    }
+    
+    .h2 {
+        width: 440px;
+        height: 53px;
+        font-size: 48px;
+        line-height: 52px;  
+    } 
+
+    .link_card_phone {
+        width: 440px;
+        height: 114px;
+        margin-left: 0;
+        padding: 22px;
+    }
+    
+    .link_card_adress {
+        width: 440px;
+        height: 145px;
+        padding: 22px;
+    }
+
+    .right_card_socials {
+        position: relative;
+        width: 440px;
+        height: 92px;
+        padding: 22px;
+        gap: 20px;
+     }
+
+     .instagram {
+        position: absolute;
+         top: 25%; 
+        left: 27%; 
+     }
+
+     .whatsapp {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+     }
+     
+     .right_card_hours {
+        width: 440px;
+        height: 114px;
+        padding: 22px;
+      }
+ 
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        width: 440px;
+        height: 520px;    
+    } 
+
+    .right_card_hours > .p{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;     
+      }
+
+    .map {
+        width: 440px;  
+        height: 250px;
+        margin-bottom: 20px;
+        margin-top: -20px;
+    }
+
+    .p {
+        width: 400px;
+        height: 62px;
+        font-size: 28px;
+        line-height: 30px;
+        margin: 0;   
+    }
+    
+}
+
+@media(max-width: 360px) {
+    
+    .section {
+        gap: 24px;
+        height: 918px;
+        width: 320px;
+    }
+    
+    .h2 {
+        width: 330px;
+        height: 44px;
+        font-size: 40px;  
+        line-height: 44px;
+    } 
+
+    .link_card_phone {
+        width: 320px;   
+    }
+    
+    .link_card_adress {
+        width: 320px;
+        height: 176px; 
+    }
+
+    .right_card_socials {
+        width: 320px;
+        position: relative;
+    }
+
+    
     .instagram {
-        width: 44px;
-        height: 44px;
-        margin-right: 16px;
+        position: absolute;
+         top: 25%; 
+        left: 35%; 
+     }
+
+     .whatsapp {
+        position: absolute;
+        top: 25%;
+        left: 52%;
+     }
+     
+     .right_card_hours {
+        width: 320px;
     }
 
-    .whatsapp {
-        width: 44px;
-        height: 44px;
 
+ 
+    .contact {
+        gap: 12px;
+        width: 320px;
+        height: 520px;    
+    } 
+
+    .map {
+        width: 320px;  
+       margin: 2px;
     }
+
+    .p {
+        width: 280px;
+        height: 92px;
+    }
+
+}
