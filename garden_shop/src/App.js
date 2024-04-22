@@ -11,6 +11,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { useState } from 'react';
 import ModalWindow from './components/ModalWindow';
+import NotFoundPage from './pages/NotFoundPage';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/product/:id' element={<SingleProductPage/>}/>
         <Route path='/sales' element={ <SalesPage/> } />
         <Route path='/cart' element={ <CartPage open_modal={open_modal} />} />
+        <Route path='*' element={ <NotFoundPage/>} />
       </Routes>
       <ModalWindow close_modal={close_modal} modalActive={modalActive}/>
       <Footer/>

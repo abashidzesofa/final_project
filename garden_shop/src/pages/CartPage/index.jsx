@@ -1,8 +1,8 @@
+
 import React from 'react'
 import CartContainer from '../../components/CartContainer'
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
 import { domen } from '../../requests/categories';
 import s from './index.module.css';
 import { Link } from 'react-router-dom';
@@ -62,6 +62,7 @@ export default function CartPage({open_modal}) {
      
    console.log (cartState)
    return (
+
     <section className={['wrapper', s.section_carts].join(' ')}> 
 
       <div className={s.cart_page}>
@@ -115,5 +116,6 @@ export default function CartPage({open_modal}) {
 
   </section>
   
+
    )
 }

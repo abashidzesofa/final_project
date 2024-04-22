@@ -395,6 +395,15 @@
 
 .description_block  {
    margin: 32px auto;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.description_block.expand {
+   white-space: normal;
+   overflow: visible;
+   text-overflow: clip;
 }
 
 .description_block p:first-child {
@@ -416,6 +425,8 @@
    line-height: 20.8px;
    color: #282828;
    margin: 16px auto;
+   overflow: hidden; 
+   text-overflow: ellipsis;
 }
 
 .description_block p:last-child {

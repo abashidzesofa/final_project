@@ -7,8 +7,7 @@ import { useDispatch } from 'react-redux';
 
 export default function SalesCard({ image, title, discont_price, price, id, count }) {
 
-   const dispatch=useDispatch();
-
+   const dispatch = useDispatch();
    const img = domen + image;
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
    const new_price = price.toFixed(1);
@@ -32,8 +31,10 @@ export default function SalesCard({ image, title, discont_price, price, id, coun
                </div>
             </div>
          </div>
+
        </Link>
       <button className={s.button_on_hover} onClick={() => dispatch(addToCartAction({id, image, title, price, discont_price, count}))}>Add to cart</button>
+      </Link>
       </div>
    )
 }

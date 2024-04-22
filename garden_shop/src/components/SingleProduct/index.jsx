@@ -6,7 +6,6 @@ import s from './index.module.css'
 import { domen } from '../../requests/categories';
 import { add_single_to_cart_action } from '../../store/reducers/cart_reducer';
 
-
 export default function SingleProduct({ id, categoryId, title, image, price, discont_price, description }) {
 
    const dispatch = useDispatch();
@@ -32,6 +31,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
       setCount(0);
    };
 
+   
    useEffect(() => {
       dispatch(get_categories)
    },  []);
@@ -50,6 +50,15 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
 
 
+
+   const [expanded, setExpanded] = useState(false);
+
+   const toggleExpand = () => {
+      setExpanded(!expanded);
+   };
+
+
+ 
    return (
       <div className='wrapper'>
          <section className={s.buttons}>
@@ -79,7 +88,7 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                   <p className={class_name}> { discount_percentage }% </p>
                </div>
                <div className={s.cart_block}>
-               <div className={s.count_block}>
+                  <div className={s.count_block}>
                      <button onClick={() => decr_count()}> - </button>
                      <p> { count }</p>
                      <button onClick={() => incr_count()}> + </button>
@@ -89,10 +98,10 @@ export default function SingleProduct({ id, categoryId, title, image, price, dis
                      <p style={{ color: 'red' }}>{error_message}</p>
                   </div>
             </div>
-            <div className={s.description_block}>
+            <div className={`${s.description_block} ${expanded ? s.expand : ''}`}>
                <p> Description </p>
-               <p> { description } </p>
-               <p> Read more </p>
+               <p> {description} </p>
+               <p onClick={toggleExpand}> Read {expanded ? 'less' : 'more'} </p>
             </div>
             </div>
          </section>

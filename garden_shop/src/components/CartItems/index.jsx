@@ -38,3 +38,4 @@ export default function CartItems({id, image, title, price, count, discont_price
     </div>
   )
 }
+

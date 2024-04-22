@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Form, Link } from 'react-router-dom'
 import s from './index.module.css'
 import logo_plant from './images/plant.png'
 import logo_ground from './images/ground.png'
 import cart_icon from './images/icon.png'
 import { useSelector } from 'react-redux'
+
 
 export default function Header() {
 
@@ -12,7 +13,7 @@ export default function Header() {
 
     const totalCount=cartState.reduce((acc, el)=> acc + (el.count), 0);
    return (
-      <section className={[s.header, 'wrapper'].join(' ')}>
+      <section className={s.header}>
          <div className={s.logo_container}>
             <img src={ logo_plant } alt="logo"/>
             <img src={ logo_ground } alt="logo"/>
@@ -29,7 +30,11 @@ export default function Header() {
                <div><p>{totalCount}</p> </div>
             </div>
          </Link>
-         
+                        
+            <div  className={s.burger_icon}>  
+               <span></span>
+            </div>
+
       </section>
    )
 }

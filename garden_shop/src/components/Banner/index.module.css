@@ -2,28 +2,27 @@
 
 .banner {
    color: white;
-   background-position: center;
    flex-direction: column;
    justify-content: center;
    display: flex;
    height: 600px;
    max-width: 1440px; 
    margin: 0 auto;
-   background-size: cover;
- 
+   background-position: center;   
+   background-size: cover;        
+   padding: 80px 40px 210px 40px;
 }
 
-   h1 {
+.banner h1 {
    font-family: "Montserrat";
    font-size: 86px;
    width: 1000px;
    height: 250px;
-   line-height: 110%;
+   line-height: 120%;
    
- 
-}
+   }
 
-button {
+.title button {
    color: white;
    font-size: 20px;
    background-color: #92A134;
@@ -35,7 +34,76 @@ button {
     
 }  
 
-.title {
-   padding: 80px 80px 210px 40px;
+@media(max-width: 1000px) {
+   .banner {
+     height: 476px;
+     padding: 60px 20px 120px 20px;
+   }
+ 
+   .banner h1 {  
+     font-size: 86px;
+     width: 940px;
+     height: 296px;
+     line-height: 120%;
+   }
+ 
+ }
+
+@media(max-width: 768px) {
+  .banner {
+    height: 634px;
+    padding: 60px 20px 326px 20px;
+  }
+
+  .banner h1 {
+    margin-bottom: 40px;
+    font-size: 66px;
+    width: 728px;
+    height: 150px;
+    line-height: 110%;
+  }
+
+}
+
+@media(max-width: 480px) {
+  .banner {
+    height: 600px;
+  }
+
+  .banner h1 {
+    font-size: 60px;
+    width: 410px;
+    height: 264px;
+    line-height: 66px;
+    margin-top: 80px;
+    
+   
+  }
+  
+  .banner button {
+    font-size: 18px;
+    width: 199px;
+    height: 47px; 
+    margin-top: 24px;
+  
+ }  
+}
+
+@media(max-width: 360px) {
+ 
+  .banner h1 {
+    font-size: 52px;
+    width: 320px;
+    height: 299px;
+    line-height: 57px;
+    padding: 50px 20px 71px 0px;
+
+  }
+  
+  .banner button {
+    font-size: 18px;
+    width: 199px;
+    height: 47px;
+ } 
 
 }
