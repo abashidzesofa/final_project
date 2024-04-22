@@ -124,3 +124,132 @@
    left: 60%;
    text-decoration: line-through;
 } 
+
+@media(max-width: 1000px) {
+   .imgs_block img {
+      width: 225px;
+      height: 250px;
+   }
+
+   .product_by_category {
+      width: 225px;
+      height: 398px;
+   }
+
+   .descr_block {
+      width: 225px;
+      height: 128px;
+      padding: 10px 20px 20px 20px;
+   }
+
+   .descr_block > p {
+      width: 190px;
+      left: -10px;
+   }
+
+   .price_block {
+      width: 225px;
+      height: 44px;
+      display: flex;
+      gap: 16px;
+      position: relative;
+      padding-top: 46px;
+   }
+
+   .price_block > p:nth-child(2) {
+      margin-top: 25px;
+      left: 60%;
+   } 
+}
+
+@media(max-width: 768px) {
+   .imgs_block img {
+      width: 354px;
+      height: 250px;
+   }
+
+   .product_by_category {
+      width: 354px;
+      height: 372px;
+   }
+
+   .descr_block {
+      margin-top: 10px;
+      width: 354px;
+      height: 102px;
+      padding: 0px 20px 20px 20px;
+   }
+
+   .descr_block > p {
+      width: 320px;
+   }
+
+   .price_block {
+      width: 310px;
+      bottom: -20px;
+      padding-top: 0;
+   }
+
+   .price_block > p:nth-child(2) {
+      margin-top: -20px;
+      left: 50%;
+   } 
+}
+
+@media(max-width: 480px) {
+   .imgs_block img {
+      width: 210px;
+      height: 220px;
+   }
+
+   .product_by_category {
+      width: 210px;
+      height: 358px;
+   }
+
+   .descr_block {
+      margin-top: 10px;
+      width: 210px;
+      height: 102px;
+      margin-top: 10px;
+   }
+
+   .descr_block > p {
+      width: 175px;
+   }
+
+   .price_block {
+      width: 210px;
+      bottom: -40px;
+      padding-top: 0;
+   }
+
+   .price_block > p:nth-child(2) {
+      width: 46px;
+      font-size: 18px;
+      height: 23px;
+      line-height: 23.4px;
+      top: 75%;
+      left: 58%;
+   } 
+
+   .price_block > p:nth-child(1) {
+      font-size: 35px;
+      line-height: 39px;
+      height: 40px;
+   }
+}
+
+@media(max-width: 360px) {
+   .imgs_block img {
+      width: 320px;
+   }
+
+   .product_by_category {
+      width: 320px;
+   }
+
+   .descr_block > p {
+      width: 280px;
+   }
+}

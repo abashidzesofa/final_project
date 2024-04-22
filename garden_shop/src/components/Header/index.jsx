@@ -1,13 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Form, Link } from 'react-router-dom'
 import s from './index.module.css'
 import logo_plant from './images/plant.png'
 import logo_ground from './images/ground.png'
 import cart_icon from './images/icon.png'
 
+
 export default function Header() {
    return (
-      <section className={[s.header, 'wrapper'].join(' ')}>
+      <section className={s.header}>
          <div className={s.logo_container}>
             <img src={ logo_plant } alt="logo"/>
             <img src={ logo_ground } alt="logo"/>
@@ -23,7 +24,11 @@ export default function Header() {
                <img src={cart_icon} alt="cart icon"/>
             </div>
          </Link>
-         
+                        
+            <div  className={s.burger_icon}>  
+               <span></span>
+            </div>
+
       </section>
    )
 }

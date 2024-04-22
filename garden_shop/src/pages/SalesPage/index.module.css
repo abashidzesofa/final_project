@@ -101,3 +101,59 @@
    line-height: 20.16px;
    text-align: left;
 }
+
+@media(max-width: 1000px) {
+   .sales_cards_container {
+      gap: 20px;
+   }
+   
+   .title {
+      width: 960px;
+      margin-bottom: 32px;
+   } 
+}
+
+@media(max-width: 768px) {
+   .sales_cards_container {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 60px;
+   }
+   
+   .title {
+      width: 728px;
+      height: 62px;
+      font-size: 56px;
+      line-height: 61.6px;
+   } 
+
+}
+
+@media(max-width: 480px) {
+   .sales_cards_container {
+      gap: 20px;
+   }
+   
+   .title {
+      width: 440px;
+      height: 106px;
+      font-size: 48px;
+      line-height: 52.8px;
+   } 
+
+   .buttons {
+      display: none;
+   }  
+}
+
+@media(max-width: 360px) {
+   .sales_cards_container {
+      grid-template-columns: repeat(1, 1fr);
+      /* gap: 20px; */
+   }
+   
+   .title {
+      width: 320px;
+      height: 88px;
+      margin-bottom: 24px;
+   } 
+}
