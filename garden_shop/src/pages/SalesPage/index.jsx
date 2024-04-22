@@ -71,7 +71,7 @@ export default function SalesPage() {
          <section className={s.sales_cards_container}>
             {
                products_data
-               .filter(el => !el.discont_price)
+               .filter(el => el.discont_price !== null)
                .filter(el => el.visible)
                .map(el => <SalesCard key={el.id} {...el}/>)
             }

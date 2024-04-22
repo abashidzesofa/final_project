@@ -24,6 +24,7 @@
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: #F26D22;
+   border: 1px solid #F26D22;
    color: #FFFFFF;
    padding: 16px 32px;
    border-radius: 7px;

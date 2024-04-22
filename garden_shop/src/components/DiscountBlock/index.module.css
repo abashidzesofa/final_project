@@ -102,7 +102,7 @@
       right: 20px;
    }
 
-   form > input { 
+   .form > input { 
       height: 58px;
    }
 
@@ -144,7 +144,7 @@
       bottom: 0;
    }
 
-   form > input { 
+   .form > input { 
       height: 58px;
    }
 
@@ -182,7 +182,7 @@
       margin: 24px;
    }
 
-   form > input { 
+   .form > input { 
       height: 47px;
    }
 

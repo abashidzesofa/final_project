@@ -1,9 +1,9 @@
 import React from 'react'
 import s from './index.module.css'
 import { domen } from '../../requests/categories'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { addToCartAction } from '../../store/reducers/cart_reducer';
+import { addToCartAction } from '../../store/reducers/cart_reducer'
 
 export default function SalesCard({ image, title, discont_price, price, id, count }) {
 
