@@ -7,6 +7,7 @@ import cart_icon from './images/icon.png'
 import { useSelector } from 'react-redux'
 
 
+
 export default function Header() {
 
    const cart_state = useSelector(store => store.cart);

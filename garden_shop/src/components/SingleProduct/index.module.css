@@ -74,7 +74,7 @@
    border-bottom: 1px solid #DDDDDD;
    border-top: 1px solid #DDDDDD;
    border-radius: 15px;
-   object-fit: cover;
+   object-fit:cover;
    cursor: pointer;
 }
 
@@ -168,7 +168,9 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   border: 1px solid #DDDDDD;
    background-color: #FFFFFF;
+   border-radius: 11px;
    color: #8B8B8B;
 }
 .count_block p {
@@ -192,6 +194,8 @@
    font-weight: 600;
    line-height: 26px;
    background-color: #92A134;
+   border: 1px solid #92A134;
+   border-radius: 10px;
    color: #FFFFFF;
 }
 

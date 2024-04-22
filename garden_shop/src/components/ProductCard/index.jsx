@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { addToCartAction } from '../../store/reducers/cart_reducer';
 import { useDispatch } from 'react-redux';
 
+
 export default function ProductCard({ image, title, price, discont_price, id, count}) {
 
    const dispatch = useDispatch();
@@ -16,6 +17,7 @@ export default function ProductCard({ image, title, price, discont_price, id, co
    const discount_percentage = Math.floor(((discont_price - price) / discont_price) * 100);
 
    return (
+      
       <div className={s.product_card_container}>
       <Link to={`/product/${id}`}>
          <div className={s.product_by_category}>
