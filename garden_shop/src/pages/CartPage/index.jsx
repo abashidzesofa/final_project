@@ -24,7 +24,7 @@ export default function CartPage({open_modal}) {
 
     const totalItems=new Set(cartState.map(item => item.id)).size;
 
-   
+
 
     
 
@@ -60,7 +60,7 @@ export default function CartPage({open_modal}) {
     
 
      
-   console.log (cartState)
+  //  console.log (cartState)
    return (
 
     <section className={['wrapper', s.section_carts].join(' ')}> 
